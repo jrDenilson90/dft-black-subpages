@@ -1,0 +1,69 @@
+mixin template-formulario-crm(campanha)
+    .template-formulario-crm
+        form(
+            id="newsletterValidateDetail"
+            name="contact-form"
+            action=""
+            method="post"
+            data-form=""
+            data-newsletter-form=""
+            data-remote=""
+            data-form-required=""
+            data-form-ui-enable="true"
+            data-response-hide=""
+            data-form-error-message="Insira um e-mail válido"
+            data-campaign=campanha
+            class="dft form"
+        )
+
+            .flexInputs
+                input(type="text" name="nome" placeholder="*Nome" required)
+                input(type="email" name="email" placeholder="*E-mail" required)
+                input#telefone(type="text" name="numero" placeholder="*(DDD) 99999-9999" maxlength="15" required)
+            
+            p.text Quais são as categorias que você deseja receber ofertas?
+
+            .flexCategories
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories1" value="tenis", id="cat1")
+                    label(for="cat1") Tênis
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories2" value="bolsas", id="cat2")
+                    label(for="cat2") Bolsas
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories3" value="vestuario", id="cat3")
+                    label(for="cat3") Vestuário
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories4" value="perfumaria", id="cat4")
+                    label(for="cat4") Perfumaria
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories5" value="calçados", id="cat5")
+                    label(for="cat5") Calçados
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="categories6" value="acessorios", id="cat6")
+                    label(for="cat6") Acessórios
+                                
+            p.text Selecione suas categorias preferidas pra compor o seu look ou dar de presente.
+
+            .flexOptions
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="options1" value="feminino", id="feminino")
+                    label(for="feminino") Feminino
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="options2" value="masculino", id="masculino")
+                    label(for="masculino") Masculino
+                .btnCat(aria-live="polite")
+                    input(type="checkbox" name="options3" value="infantil", id="infantil")
+                    label(for="infantil") Infantil
+
+            p.text *Ao clicar em ENVIAR, declaro que li e concordo com as <a href="https://www.dafitigroup.com/politica-de-privacidade">Políticas de Privacidade</a> e os <a href="https://www.dafitigroup.com/termos-de-uso">Termos e condições de uso</a>.
+            input.submit(type="submit" value="ENVIAR" id="submit")
+        
+        .loading
+            img.imgLoading(src="https://dafitistatic.dafiti.com.br/cms/black-dafiti/2024_10_16_09_38_20_kOnzy.gif", alt="")
+
+        .modal-dados
+            .boxModal
+                p.textModal Dados enviados com sucesso!
+                button.modal-fechar
+                    p Fechar

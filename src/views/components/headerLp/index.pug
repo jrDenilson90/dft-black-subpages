@@ -1,0 +1,4 @@
+mixin component-headerLp(infos)
+    each info in infos
+        .component-headerLp(style=`background-color: ${info.bgColor}`)
+            img(src=info.image, alt=info.alt, aria-label=info.alt)

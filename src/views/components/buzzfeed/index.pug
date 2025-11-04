@@ -1,0 +1,57 @@
+- var quizIndex = 0
+
+mixin buzzfeedQuiz(questions, modals)
+    - quizIndex = (typeof quizIndex !== 'undefined' ? quizIndex + 1 : 1)
+    - const quizId = 'quiz_' + quizIndex
+
+    .containerBuzzFeed
+        .marcador
+            ul
+                each question, qIndex in questions
+                    li(data-marcador=qIndex class="hide") ✔
+
+        .buzzfeed-quiz(data-quiz-id=quizId)
+            each question, qIndex in questions
+                - const type = question.type || 'simple'
+                .quiz-question(
+                    data-question=qIndex
+                    style=(qIndex === 0 ? 'display:block' : 'display:none')
+                    data-type=type
+                )
+                    h3= question.text
+                    .quiz-options
+                        each option, oIdx in question.options
+                            if type === 'multiple'
+                                label
+                                    input.quiz-option(
+                                        type="checkbox"
+                                        name=`${quizId}_q${qIndex}`
+                                        value=option.feedback
+                                        data-feedback=option.feedback
+                                        data-question=qIndex
+                                    )
+                                    if option.image
+                                        img(src=option.image, alt="Opção de imagem", class="option-image")
+                                    else if option.text
+                                        span= option.text
+                            else
+                                label
+                                    input.quiz-option(
+                                        type="radio"
+                                        name=`${quizId}_q${qIndex}`
+                                        value=option.feedback
+                                        data-feedback=option.feedback
+                                        data-question=qIndex
+                                    )
+                                    if option.image
+                                        img(src=option.image, alt="Opção de imagem", class="option-image")
+                                    else if option.text
+                                        span= option.text
+                    button.confirm-btn(type="button") Confirmar
+
+            // Modais de resultado dinâmicos (sempre obrigatório)
+            if modals
+                each modalContent, feedback in modals
+                    .quiz-modal(class=`feedback-${feedback}` style="display:none;")
+                        .modal-content
+                            != modalContent

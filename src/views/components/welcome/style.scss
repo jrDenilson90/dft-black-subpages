@@ -1,0 +1,33 @@
+@use '../styles/variables' as *;
+
+.component-welcome {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    max-height: 76.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .gif {
+        position: absolute;
+        width: 7em;
+        height: 7em;
+        object-fit: contain;
+        opacity: 0;
+        animation: slideAnimation 6s infinite;
+    
+        &:nth-child(1) { animation-delay: 0s; }
+        &:nth-child(2) { animation-delay: 1s; }
+        &:nth-child(3) { animation-delay: 2s; }
+        &:nth-child(4) { animation-delay: 3s; }
+        &:nth-child(5) { animation-delay: 4s; }
+        &:nth-child(6) { animation-delay: 5s; }
+    }
+}
+  
+@keyframes slideAnimation {
+    0%, 16.67% { opacity: 0; }
+    16.67%, 33.33% { opacity: 1; }
+    33.33%, 100% { opacity: 0; }
+}

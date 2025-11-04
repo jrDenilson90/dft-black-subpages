@@ -1,0 +1,125 @@
+@use '../styles/variables' as *;
+
+.countdown-dft {
+    margin: 0;
+}
+
+.countdown-dft {
+
+    .container {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        width: 100%;
+        background-color: transparent;
+
+        .container-segment {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            align-items: center;
+
+            .segment {
+                display: flex;
+                gap: 0.3em;
+
+                .flip-card {
+                    position: relative;
+                    display: inline-flex;
+                    flex-direction: column;
+                    box-shadow: 0 .2em .3em 0 rgba(0, 0, 0, 0.2);
+                    border-radius: .1em;
+            
+                    &[data-days-hundreds] {
+            
+                        .top:empty,
+                        .bottom:empty {
+                            display: none;
+                        }
+                    }
+            
+                    .top-flip {
+                        position: absolute;
+                        width: 100%;
+                        animation: flip-top 250ms ease-in;
+                        transform-origin: bottom;
+                    }
+            
+                    .bottom-flip {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        animation: flip-bottom 250ms ease-out 250ms;
+                        transform-origin: top;
+                        transform: rotateX(90deg);
+                    }
+                }
+            }
+        
+            .segment-title {
+                font-size: 1.05em;
+                color: #ffffff;
+                font-weight: 500;
+                @media (max-width: 768px) {
+                    font-size: 2.2vw;
+                }
+            }
+        }
+    }
+
+    .top,
+    .bottom,
+    .flip-card .top-flip,
+    .flip-card .bottom-flip {
+        height: 0.75em;
+        line-height: 1;
+        padding: 0.25em 0;
+        overflow: hidden;
+        font-size: 5em;
+        font-weight: 500;
+    }
+
+    .top,
+    .flip-card .top-flip {
+        background-color: #f7f7f7;
+        border-top-right-radius: .1em;
+        border-top-left-radius: .1em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 1em;
+    }
+
+    .bottom,
+    .flip-card .bottom-flip {
+        align-items: flex-end;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        border-bottom-right-radius: .1em;
+        border-bottom-left-radius: .1em;
+        width: 1em;
+    }
+
+    @media (max-width: 768px) {
+        .top,
+        .flip-card .top-flip,
+        .bottom,
+        .flip-card .bottom-flip {
+            width: 7vw;
+            font-size: 6vw;
+        }
+    }
+}
+
+// Keyframes fora do escopo do seletor para funcionar corretamente
+@keyframes flip-top {
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes flip-bottom {
+    100% {
+        transform: rotateX(0deg);
+    }
+}

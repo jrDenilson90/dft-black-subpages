@@ -1,0 +1,33 @@
+<style>
+    .catalog-banner-full-container,
+    .catalog-page,
+    .l-container {
+        margin-top: 0;
+    }
+
+    .l-full-content.l-container {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .container.catalog-page {
+        padding: 0;
+        width: 100%;
+    }
+
+    .content-products-list.row,
+    .clearfix:not(.l-catalog-header, .catalog-banner-full, .menu-group) {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .catalog-row-filters.row {
+        max-width: fit-content;
+    }
+
+    .catalog-breadcrumb,
+    .after-header-overflow,
+    #ad-placements {
+        display: none !important;
+    }
+</style>

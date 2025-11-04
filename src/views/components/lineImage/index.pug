@@ -1,0 +1,21 @@
+mixin component-lineImage(pairs)
+    .component-lineImage
+        .boxLoading
+            .imgLoading
+        each pair in pairs
+            a.btn_ga_click(
+                href=pair.link, 
+                rel="noopener noreferrer", 
+                onclick="sendClickEventGA(this)"
+            )   
+                picture
+                    if pair['imageMob'] && pair['imageMob'] !== ''
+                        source(media="(max-width: 767px)", srcset=pair['imageMob'])
+                    source(media="(min-width: 768px)", srcset=pair['imageDesk'])
+                    img.img_ga_view(
+                        src=(pair['imageMob'] && pair['imageMob'] !== '' ? pair['imageMob'] : pair['imageDesk']),
+                        alt=pair.alt,
+                        class='image',
+                        data-creative=pair.dataCreative,
+                        data-name=pair.dataName
+                    )

@@ -1,0 +1,193 @@
+@use '../styles/variables' as *;
+
+.containerBuzzFeed {
+    background-color: #0001;
+    border: solid .2em #000;
+    margin: 1em;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.marcador ul {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin-bottom: 2em;
+    list-style: none;
+    padding: 0;
+}
+
+.marcador li {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: #eee;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: background 0.2s, color 0.2s;
+    border: solid .15em #000;
+}
+
+.marcador li.checked {
+    background: #3A3B73;
+    color: #fff;
+}
+
+.marcador li.hide {
+    background: #eee;
+    color: #eee;
+}
+
+.buzzfeed-quiz {
+    width: 100%;
+    margin: 4em auto 2em;
+    max-width: 940px;
+
+    .quiz-question {
+        // margin-bottom: 2em;
+
+        h3 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .quiz-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: .5em;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                margin: 0.5em;
+                border: .15em solid #000;
+                border-radius: 5em;
+                transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+                padding: 1em 2em;
+                min-width: 8em;
+                background: #fff;
+                position: relative;
+                font-size: 1.3em;
+
+                &.selected {
+                    border-color: #e53935;
+                    background: #ffeaea;
+                }
+
+                input[type="radio"],
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                .text {
+                    background: #f7f7f7;
+                    padding: .5em 2em;
+                    border-radius: 0.5em;
+                    transition: background 0.2s;
+                }
+
+                .option-image {
+                    width: 10em;
+                    height: 10em;
+                    object-fit: cover;
+                    display: block;
+                    margin: 0.5em auto;
+                    border-radius: 0.5em;
+                    transition: transform 0.2s;
+                }
+
+                &:hover {
+                    border-color: #888;
+                    box-shadow: 0 0 0.5em #ccc;
+
+                    .text {
+                        background: #eee;
+                    }
+
+                    .option-image {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        .confirm-btn {
+            display: block;
+            margin: 2em auto 0 auto;
+            padding: 0.8em 2.5em;
+            background: #3A3B73;
+            color: #fff;
+            border: none;
+            border-radius: 2em;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, opacity 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px #0001;
+
+            &:hover:enabled {
+                background: #2a2950;
+                box-shadow: 0 4px 16px #0002;
+            }
+
+            &:disabled {
+                background: #ccc;
+                color: #888;
+                cursor: not-allowed;
+                opacity: 0.6;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .quiz-modal {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+
+        &.active {
+            display: flex;
+        }
+
+        .modal-content {
+            border: .2em solid #000;
+            background: #e9e9e9;
+            padding: 2em;
+            border-radius: 1em;
+            text-align: center;
+            min-width: 20em;
+            box-shadow: 0 4px 24px #0002;
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: .5em;
+            }
+
+            p {
+                font-size: 2.2em;
+            }
+
+            button {
+                margin-top: 1em;
+                padding: .5em 1em;
+                border: .2em solid #000;
+                border-radius: 5em;
+                font-size: 1.4em;
+                display: none;
+            }
+        }
+    }
+}

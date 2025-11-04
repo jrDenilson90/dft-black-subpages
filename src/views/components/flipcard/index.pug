@@ -1,0 +1,9 @@
+mixin flipCardsContainer(type, cards)
+    .flipcards-container(data-flip-type=type)
+        each card, i in cards
+            .flipcard(tabindex="0")
+                .flipcard-inner
+                    .flipcard-front
+                        != card.front
+                    .flipcard-back
+                        != card.back

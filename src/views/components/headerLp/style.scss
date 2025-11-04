@@ -1,0 +1,18 @@
+@use "../styles/variables" as *;
+
+.header.header-full.header-fixed {
+  position: relative !important;
+}
+.component-headerLp {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 10em;
+  img {
+    height: 100%;
+  }
+}

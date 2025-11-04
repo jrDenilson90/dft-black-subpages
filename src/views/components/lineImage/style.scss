@@ -1,0 +1,42 @@
+@use '../styles/variables' as *;
+
+.component-lineImage {
+    width: 100%;
+    display: flex;
+    gap: .5em;
+    position: relative;
+
+    @media (max-width: $tablet-size) {
+        overflow: auto;
+    }
+
+    a {
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+
+        @media (max-width: $tablet-size) {
+            min-width: 38%;
+        }
+
+        @media (max-width: $mobile-size) {
+            min-width: 65%;
+        }
+
+        img {
+            transition-duration: .3s;
+            display: block;
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.component-lineImage+.component-lineImage {
+    margin: .5em 0 0;
+}

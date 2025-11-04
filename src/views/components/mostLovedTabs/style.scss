@@ -1,0 +1,131 @@
+@use '../styles/variables' as *;
+
+.most_loved_tabs {
+    display: grid;
+    grid: auto / repeat(6, 1fr);
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    @media (max-width: $tablet-size) {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+
+    h3 {
+        color: #ffffff;
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+    .tab {
+        align-items: center;
+        border-radius: 1.5em 1.5em 0 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1em 2em;
+        position: relative;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+        @media (max-width: $tablet-size) {
+            width: calc(50% - .5em);
+            background-color: #4e2f905d;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+    }
+
+    [id^=tab]:checked+label {
+        color: #ffffff;
+        background-color: #4E2F90;
+    }
+
+    [id^=tab]:not(:checked)+label:hover {
+        opacity: 0.5;
+    }
+
+    .tabsContent {
+        grid-column: span 6;
+
+        .tabContent {
+            margin-top: -1.5em;
+            align-items: center;
+            background-color: #4E2F90;
+            border-radius: 1.5em;
+            box-sizing: border-box;
+            display: none;
+            padding: 3em;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            @media (max-width: $tablet-size) {
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .glitch-img-infinite {
+                width: 20em;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                picture {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% - 20em);
+                padding-left: 2em;
+
+                @media (max-width: $tablet-size) {
+                    width: 100%;
+                    padding-left: 0;
+                    margin-top: 1em;
+                }
+
+                p {
+                    color: #ffffff;
+                }
+        
+                a {
+                    align-items: center;
+                    border-radius: 2em;
+                    border: .1em solid #ffffff;
+                    color: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2em;
+                    text-decoration: none;
+                    width: fit-content;
+                    padding: .7em 2.5em;
+                    transition-duration: .3s;
+
+                    &:hover {
+                        background-color: #ffffff;
+                        p {
+                            color: #4E2F90;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

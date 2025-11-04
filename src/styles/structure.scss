@@ -1,0 +1,303 @@
+@use 'sass:math';
+
+@function random-offset($max) {
+    @return (math.random() * 2 * $max - $max) * 1px;
+}
+
+.dafitiStructure * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.dafitiStructure {
+    font-size: 62.5%;
+}
+
+.full-hd {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto 4em;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+// // Loading
+// .boxLoading {
+//     width: 100%;
+//     height: 100%;
+//     min-height: 400px;
+//     position: absolute;
+//     inset: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: rgba(255, 255, 255, 1);
+//     z-index: 5;
+//     transition-duration: .5s;
+
+//     &.zoomOut {
+//         opacity: 0;
+//         height: auto;
+//     }
+
+//     .imgLoading {
+//         width: 30px;
+//         height: 30px;
+//         border: 2px solid transparent;
+//         border-top-color: #000000;
+//         border-right-color: #000000;
+//         border-bottom-color: #000000;
+//         border-radius: 50%;
+//         animation: spin .7s linear infinite;
+//     }
+// }
+
+// @keyframes spin {
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
+
+.glitch {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: fit-content;
+    
+    .line {
+        line-height: 1;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 2.4em;
+        }
+
+        &:not(:first-child) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        b {
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation: clip 3000ms $i * -300ms linear infinite,
+                glitch#{$i} 1800ms math.random(1000) * -1ms linear infinite;
+
+                @keyframes glitch#{$i} {
+                    0% {
+                        transform: translateX(0);
+                        color: #ffffff;
+                    }
+
+                    90.5% {
+                        transform: translateX(0);
+                        color: #e3e3e3;
+                    }
+                    
+                    91% {
+                        transform: translateX(math.random(10) - 0px);
+                        color: #9d952a;
+                    }
+
+                    94% {
+                        // transform: translateX(math.random(10) - 5px);
+                        color: #fff;
+                    }
+                    
+                    97% {
+                        transform: translateX(math.random(10) - 5px);
+                        color: #b86565;
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        @keyframes clip {
+            0% {
+                clip-path: polygon(0 100%,
+                        100% 100%,
+                        100% 120%,
+                        0 120%);
+            }
+
+            100% {
+                clip-path: polygon(0 -20%,
+                        100% -20%,
+                        100% 0%,
+                        0 0);
+            }
+        }
+    }
+}
+
+.glitch-02 {
+    .line {
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation: clip 3000ms $i * -300ms linear infinite,
+                glitch2#{$i} 1800ms math.random(1000) * -1ms linear infinite;
+
+                @keyframes glitch2#{$i} {
+                    0% {
+                        transform: translateX(0);
+                        color: #12FBFE;
+                    }
+
+                    90.5% {
+                        transform: translateX(0);
+                        color: #12FBFE;
+                    }
+                    
+                    91% {
+                        transform: translateX(math.random(10) - 0px);
+                        color: #9d952a;
+                    }
+
+                    94% {
+                        // transform: translateX(math.random(10) - 5px);
+                        color: #12FBFE;
+                    }
+                    
+                    97% {
+                        transform: translateX(math.random(10) - 5px);
+                        color: #b86565;
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                        color: #12FBFE;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.glitch-img,
+.glitch-img-infinite {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+    .line {
+        &.block {
+            animation: none !important;
+        }
+
+        &:not(:first-child) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00ff00; 
+            mix-blend-mode: screen; 
+            pointer-events: none;
+            z-index: 3;
+            opacity: var(--glitch-green-opacity, 0);
+            clip-path: var(--glitch-green-clip, polygon(0 0, 100% 0, 100% 100%, 0 100%)); 
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ff0000;
+            mix-blend-mode: color-burn;
+            pointer-events: none;
+            z-index: 2; 
+            opacity: var(--glitch-opacity, 0); 
+            clip-path: var(--glitch-clip, polygon(0 0, 100% 0, 100% 100%, 0 100%)); 
+        }
+
+        @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+                animation: clip 2500ms $i * -300ms linear infinite,
+                glitchImg#{$i} 2000ms math.random(3000) * -.1ms linear infinite;
+
+                @keyframes glitchImg#{$i} {
+                    0% { 
+                        transform: translateX(0);
+                        --glitch-opacity: 0;
+                        --glitch-clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    }
+
+                    95% {
+                        transform: translateX(0);
+                        --glitch-opacity: 0;
+                    }
+
+                    96% {
+                        transform: translateX(math.random(10) - 10px);
+                        --glitch-opacity: 0.2; 
+                        --glitch-clip: polygon(0 0, 100% 0, 100% 10%, 0 10%);
+                    }
+                    
+                    97% {
+                        transform: translateX(math.random(1) - -10px);
+                        --glitch-opacity: 0; 
+                        --glitch-clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    }
+
+                    99% {
+                        transform: translateX(math.random(5) - 10px);
+                        --glitch-opacity: 0.3; 
+                        --glitch-clip: polygon(0 35%, 100% 35%, 100% 65%, 0 65%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                        --glitch-opacity: 0;
+                    }
+                }
+            }
+        }
+
+        @keyframes clip {
+            0% {
+                clip-path: polygon(0 100%,
+                        100% 100%,
+                        100% 120%,
+                        0 120%);
+            }
+
+            100% {
+                clip-path: polygon(0 -20%,
+                        100% -20%,
+                        100% 0%,
+                        0 0);
+            }
+        }
+    }
+}

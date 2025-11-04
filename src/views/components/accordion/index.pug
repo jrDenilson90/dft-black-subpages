@@ -1,0 +1,13 @@
+mixin accordionComponent(items)
+    .accordionComponent
+        each item, i in items
+            - var id = 'content_' + Math.floor(Math.random() * 1000000) + '_' + i
+            .accordion
+                button.accordion-title(
+                    aria-expanded="false"
+                    aria-controls=id
+                )
+                    h3!= item.title
+                
+                .accordion-content(id=id)
+                    != item.bodyAccordion

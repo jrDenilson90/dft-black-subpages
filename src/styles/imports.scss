@@ -1,0 +1,15 @@
+// @use 'import scss templates';
+// @use './../views/templates/teste/style.scss' as templateTeste;
+@use "./../views/templates/formulario-crm/style.scss" as templateFormulario;
+
+// @use 'import scss components';
+// @use './../views/components/teste/style.scss' as componentTeste;
+// @use "./../views/components/welcome/style.scss" as componentGifImg;
+// @use "./../views/components/headerLp/style.scss" as componentHeaderLp;
+@use "./../views/components/accordion/style.scss" as componentAccordion;
+// @use "./../views/components/flipcard/style.scss" as componentFlipCard;
+@use "./../views/components/countDown/style.scss" as componentCountDown;
+// @use "./../views/components/buzzfeed/style.scss" as componentBuzzFeed;
+// @use "./../views/components/mostLovedTabs/style.scss" as componentMostLovedTabs;
+// @use "./../views/components/lineImage/style.scss" as componentLineImage;
+// @use "./../views/components/keenSlider/style.scss" as componentKeenSlider;

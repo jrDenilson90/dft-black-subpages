@@ -1,0 +1,4 @@
+mixin component-welcome(images)
+    .component-welcome
+        each image, index in images
+            img(src=image, alt=`Image ${index + 1}`, class='gif')

@@ -1,0 +1,266 @@
+mixin calca()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Calças na Black Friday Dafiti<br> <span>Encontre o seu Estilo com Descontos</span>
+            .boxText
+                p.text Aproveite a Calça Black Friday Dafiti e encontre opções para todos os estilos e idades. Com ofertas especiais para modelos femininos, masculinos e infantis, você terá acesso às melhores marcas, cores e modelos para esta temporada. Confira as opções e encontre a calça perfeita para você!
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar as melhores ofertas de calças na Black Friday?',
+                bodyAccordion: `
+                    <h4>Encontre variedade e descontos exclusivos na Dafiti</h4>
+                    <p>Você encontra as melhores ofertas de calças na Black Friday no site da Dafiti, que oferece uma variedade de modelos femininos, masculinos e infantis. Com descontos incríveis em marcas como Adidas, Colcci, GAP, Levi's e Mango, a Dafiti é o destino ideal para aproveitar preços baixos em calças jeans, sarja, moletom e muito mais.</p>
+                `
+            },
+            {
+                title: 'Quais são as principais calças femininas com descontos na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>Na Black Friday Dafiti, você encontrará uma variedade de calças femininas com descontos. Aqui estão algumas das principais categorias:</p>
+                    <ul>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans/">Calça Jeans Feminina com Descontos</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20sarja">Calça de Sarja Feminina em Oferta</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20moletom">Calça de Moletom Feminina com Preços Especiais</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=legging">Calça Legging Feminina em Liquidação</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20alfaiataria">Calça Alfaiataria Feminina em Promoção</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20wide%20leg">Calça Wide Leg Feminina com os Melhores Preços</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20jogger">Calça Jogger Feminina com Desconto</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20cargo">Calça Cargo Feminina em Promoção</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20skinny">Calça Skinny Feminina em Oferta</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/?q=calca%20mom">Calça Mom Feminina com Preços Especiais</a></h4></li>
+                    </ul>
+                    <p>Aproveite as ofertas da Black Friday Dafiti e renove seu guarda-roupa com calças femininas de qualidade. Com opções que atendem a todos os estilos, você certamente encontrará a peça perfeita para cada ocasião!</p>
+                        `
+            },
+            {
+                title: 'Quais as opções de calças masculinas em promoção na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>Na Black Friday Dafiti, você encontrará uma variedade de calças masculinas em promoção. Aqui estão algumas das principais categorias:</p>
+                    <ul>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">Calça Jeans Masculina em Oferta</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais-sarja/">Calça de Sarja Masculina com Desconto</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20moletom">Calça de Moletom Masculina em Liquidação</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/esporte-masculino/?q=calca">Calça Esportiva Masculina com Preços Especiais</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20reta">Calça Reta Masculina em Promoção</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20alfaiataria">Calça Social Masculina com os Melhores Preços</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20cargo">Calça Cargo Masculina com Desconto</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20jogger">Calça Jogger Masculina em Oferta</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-masculinas/?q=calca%20skinny">Calça Skinny Masculina em Liquidação</a></h4></li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como criar looks para o dia a dia com as calças da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Combinações de Estilos com os Relógios da Dafiti</h4>
+                    <p>Veja abaixo algumas sugestões de looks para o dia a dia com calças da Dafiti:</p>
+                    <table border="1">
+                        <thead>
+                        <tr>
+                            <th><h4>Rotina do Dia a Dia</h4></th>
+                            <th><h4>Calça Indicada</h4></th>
+                            <th><h4>Look Feminino</h4></th>
+                            <th><h4>Look Masculino</h4></th>
+                            <th><h4>Dicas de Marcas</h4></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Trabalho Casual</td>
+                            <td>Calça Jeans ou Sarja</td>
+                            <td>Camiseta básica + Blazer + Tênis</td>
+                            <td>Camisa polo + Jaqueta + Tênis</td>
+                            <td>Levi's, Colcci</td>
+                        </tr>
+                        <tr>
+                            <td>Dia de Compras</td>
+                            <td>Calça de Moletom</td>
+                            <td>Moletom + Cropped + Tênis</td>
+                            <td>Moletom + Camiseta confortável + Tênis</td>
+                            <td>Adidas, GAP</td>
+                        </tr>
+                        <tr>
+                            <td>Atividades ao Ar Livre</td>
+                            <td>Calça Jogger</td>
+                            <td>Top + Jogger + Tênis esportivo</td>
+                            <td>Camiseta + Jogger + Tênis esportivo</td>
+                            <td>Adidas, Nike</td>
+                        </tr>
+                        <tr>
+                            <td>Saída à Noite</td>
+                            <td>Calça Alfaiataria</td>
+                            <td>Camisa + Calça de alfaiataria + Salto</td>
+                            <td>Camisa + Calça de alfaiataria + Sapatos sociais</td>
+                            <td>Mango, Colcci</td>
+                        </tr>
+                        <tr>
+                            <td>Encontro com Amigos</td>
+                            <td>Calça de Sarja</td>
+                            <td>Blusa descontraída + Calça de sarja + Botas</td>
+                            <td>Camiseta estampada + Calça de sarja + Tênis</td>
+                            <td>Colcci, Levi's</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            {
+                title: 'Quais são as tecnologias e diferenciais dos relógios da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>Os relógios disponíveis na Dafiti possuem tecnologias e diferenciais que os tornam ainda mais atraentes, como:</p>
+                    <ul>
+                        <li><h4>Resistência à água</h4></li>
+                        <li><h4>Conectividade Bluetooth (para smartwatches)</h4></li>
+                        <li><h4>Funcionalidades de monitoramento de saúde</h4></li>
+                        <li><h4>Diversidade de materiais, como aço inoxidável e silicone</h4></li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como não perder os descontos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Dicas para aproveitar ao máximo as ofertas da Black Friday na Dafiti</h4>
+                    <p>Para não perder os descontos da Black Friday Dafiti, fique de olho nas promoções antecipadas e cadastre-se na newsletter da Dafiti para receber ofertas exclusivas. Acompanhe as redes sociais e o site da Dafiti durante a Black Friday para aproveitar as melhores ofertas, além de garantir o frete grátis e a opção de entrega rápida com o "Receba Amanhã".</p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

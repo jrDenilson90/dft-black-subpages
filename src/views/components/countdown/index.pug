@@ -1,0 +1,42 @@
+mixin countdown(data)
+    .countdown-dft(data-countdown=data)
+        .container
+            .container-segment
+                .segment
+                    .flip-card(data-days-hundreds="")
+                        .top
+                        .bottom
+                    .flip-card(data-days-tens="")
+                        .top 0
+                        .bottom 0
+                    .flip-card(data-days-ones="")
+                        .top 0
+                        .bottom 0
+                span.segment-title Dias
+            .container-segment
+                .segment
+                    .flip-card(data-hours-tens="")
+                        .top 0
+                        .bottom 0
+                    .flip-card(data-hours-ones="")
+                        .top 0
+                        .bottom 0
+                span.segment-title Horas
+            .container-segment
+                .segment
+                    .flip-card(data-minutes-tens="")
+                        .top 0
+                        .bottom 0
+                    .flip-card(data-minutes-ones="")
+                        .top 0
+                        .bottom 0
+                span.segment-title Minutos
+            .container-segment
+                .segment
+                    .flip-card(data-seconds-tens="")
+                        .top 0
+                        .bottom 0
+                    .flip-card(data-seconds-ones="")
+                        .top 0
+                        .bottom 0
+                span.segment-title Segundos
