@@ -1,0 +1,246 @@
+mixin farm()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line FARM na Black Friday é na Dafiti<br> <span>As Melhores Melhores Ofertas do Ano</span>
+            .boxText
+                p.text Na Black Friday da Dafiti, a FARM traz uma seleção incrível de peças femininas que conquistam pelo estilo e qualidade.
+                p.text Com a variedade de roupas e acessórios disponíveis, é fácil encontrar o look ideal para qualquer ocasião, aproveitando as ofertas especiais.
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar produtos da FARM em promoção na Black Friday?',
+                bodyAccordion: `
+                    <h4>Descubra as Melhores Ofertas da FARM na Black Friday Dafiti!</h4>
+                    <p>Na Black Friday Dafiti, você encontra os melhores descontos em produtos FARM, é a oportunidade perfeita para renovar seu guarda-roupa com estilo.</p> 
+                    <p>Acesse a página dedicada à marca e explore uma variedade de ofertas imperdíveis em roupas e acessórios femininos, como vestidos, blusas, saias, mochilas e muito mais. Não deixe de conferir as promoções em destaque para complementar seus looks. Fique atenta às novidades e aproveite os preços especiais para garantir suas peças favoritas antes que acabem!</p>
+                `
+            },
+            {
+                title: 'Quais são as tendências de moda FARM disponíveis na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>A seleção FARM na Black Friday Dafiti traz diversas tendências que refletem a essência vibrante e autêntica da marca. Confira algumas das peças em destaque:</p>
+                    <ul>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/vestidos/farm/">Vestidos FARM na Black Friday</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/blusas/farm/">Blusas e Camisetas FARM na Black Friday</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/farm/">Shorts e Saias FARM na Black Friday</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/macaquinhos-e-macacoes/farm/">Macacões FARM na Black Friday</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/roupas-femininas/calcas/farm/">Calças FARM na Black Friday</a></h4></li>
+                    </ul>
+                    <p>Essas peças refletem as principais tendências de moda FARM e são ideais para quem busca um look alegre e moderno.</p>
+                `
+            },
+            {
+                title: 'Como criar looks estilosos com as peças da FARM disponíveis na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Looks Estilosos com FARM em Promoção</h4>
+                    <p>Veja como montar looks estilosos com as peças da FARM, considerando a ocasião, os sapatos indicados e dicas fashion:</p>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Look FARM</th>
+                                <th>Ocasião</th>
+                                <th>Sapatos Indicados</th>
+                                <th>Dicas Fashion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vestido estampado</td>
+                                <td>Festa ou evento casual</td>
+                                <td>Sandálias de salto</td>
+                                <td>Use acessórios minimalistas para um visual equilibrado.</td>
+                            </tr>
+                            <tr>
+                                <td>Shorts e blusa estampada</td>
+                                <td>Dia a dia ou passeio</td>
+                                <td>Tênis ou rasteirinhas</td>
+                                <td>Adicione uma bolsa colorida para um toque divertido.</td>
+                            </tr>
+                            <tr>
+                                <td>Macacão</td>
+                                <td>Almoço ou brunch</td>
+                                <td>Sandálias ou sapatilhas</td>
+                                <td>Finalize o look com um cinto que destaque a cintura.</td>
+                            </tr>
+                            <tr>
+                                <td>Saia e blusa de manga longa</td>
+                                <td>Reunião ou evento formal</td>
+                                <td>Sapatos de salto alto</td>
+                                <td>Opte por uma bolsa estruturada para um ar sofisticado.</td>
+                            </tr>
+                            <tr>
+                                <td>Blusa cropped e calça jeans</td>
+                                <td>Noite com amigos</td>
+                                <td>Bota de cano curto</td>
+                                <td>Adicione brincos statement para um toque de glamour.</td>
+                            </tr>
+                            <tr>
+                                <td>Saia longa e blusa de tecido leve</td>
+                                <td>Passeio de verão</td>
+                                <td>Sandálias rasteiras</td>
+                                <td>Use um chapéu e óculos escuros para um look descontraído.</td>
+                            </tr>
+                            <tr>
+                                <td>Shorts jeans e camiseta básica</td>
+                                <td>Fim de semana casual</td>
+                                <td>Tênis branco</td>
+                                <td>Finalize com uma jaqueta jeans para um estilo despojado.</td>
+                            </tr>
+                            <tr>
+                                <td>Vestido midi e cinto</td>
+                                <td>Almoço de negócios</td>
+                                <td>Sapatos de salto grosso</td>
+                                <td>Escolha uma bolsa em tom neutro para complementar o look.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            {
+                title: 'Como aproveitar ao máximo as ofertas da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Maximize Seus Descontos na Black Friday Dafiti!</h4>
+                    <p>Para aproveitar ao máximo a Black Friday Dafiti, comece a planejar suas compras com antecedência. Confira as ofertas em destaque e elabore uma lista das peças-chave que deseja adquirir, como os irresistíveis produtos da FARM, que combinam estilo e conforto. Não se esqueça de acompanhar as redes sociais e baixe o app da Dafiti para ficar por dentro das promoções relâmpago e dos descontos exclusivos.</p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

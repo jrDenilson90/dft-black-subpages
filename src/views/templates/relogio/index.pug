@@ -1,0 +1,248 @@
+mixin relogio()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Relógios na Black Friday Dafiti<br> <span>Os Melhores Modelos em Promoção</span>
+            .boxText
+                p.text A Black Friday é a oportunidade perfeita para adquirir aquele relógio que você sempre quis.
+                p.text Na Dafiti, você encontra uma vasta seleção de modelos para todos os gostos e idades, com descontos imperdíveis.
+                p.text Além disso, a diversidade de estilos e marcas garante que você encontre a peça ideal para complementar seu visual ou presentear alguém especial.
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar os melhores relógios na Black Friday?',
+                bodyAccordion: `
+                    <h4>Encontre as melhores ofertas de relógios na Dafiti</h4>
+                    <p>Você pode encontrar os melhores relógios na Black Friday diretamente no site da Dafiti. Com uma ampla seleção de modelos para todas as idades e estilos, a Dafiti é o lugar ideal para garantir descontos incríveis em marcas renomadas.</p>
+                `
+            },
+            {
+                title: 'Quais são os diferentes modelos de relógios disponíveis na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>A Dafiti oferece uma variedade de modelos de relógios, incluindo:</p>
+                    <ul>
+                        <li><h4><a href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=relogio">Relógios Analógicos em Promoção</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=relogio">Relógios Digitais com Descontos</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=relogio">Relógios Smartwatches em Liquidação</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=relogio">Relógios de Couro com Preços Especiais</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=relogio">Relógios de Metal com os Melhores Descontos</a></h4></li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Quais são as principais marcas de relógio que você encontra na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>Na Black Friday Dafiti, você encontrará marcas renomadas como:</p>
+                    <ul>
+                        <li><h4><a href="https://www.dafiti.com.br/champion/">Black Friday Champion</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/guess/">Black Friday Guess</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/mormaii/">Black Friday Mormaii</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/orient/">Black Friday Orient</a></h4></li>
+                        <li><h4><a href="https://www.dafiti.com.br/casio/">Black Friday Casio</a></h4></li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como criar um look combinando seu estilo com os relógios da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Combinações de Estilos com os Relógios da Dafiti</h4>
+                    <p>Para criar um look harmonioso, escolha um relógio que complemente seu estilo pessoal. Veja as combinações abaixo:</p>
+                    <table border="1">
+                    <tbody><tr>
+                        <th>Tipo de Relógio</th>
+                        <th>Estilo de Roupas</th>
+                        <th>Ocasião</th>
+                        <th>Descrição</th>
+                        <th>Marcas</th>
+                    </tr>
+                    <tr>
+                        <td>Analógico</td>
+                        <td>Roupas formais</td>
+                        <td>Eventos sociais</td>
+                        <td>Combina elegância e sofisticação.</td>
+                        <td>Orient, Guess</td>
+                    </tr>
+                    <tr>
+                        <td>Digital</td>
+                        <td>Casual e esportiva</td>
+                        <td>Dia a dia</td>
+                        <td>Prático e moderno, perfeito para atividades cotidianas.</td>
+                        <td>Casio, Mormaii</td>
+                    </tr>
+                    <tr>
+                        <td>Smartwatch</td>
+                        <td>Estilo casual</td>
+                        <td>Trabalho e lazer</td>
+                        <td>Funcionalidades inteligentes que facilitam a rotina.</td>
+                        <td>Champion</td>
+                    </tr>
+                    <tr>
+                        <td>Kits</td>
+                        <td>Acessórios variados</td>
+                        <td>Presentes especiais</td>
+                        <td>Combinação de relógios com outros acessórios para um look completo.</td>
+                        <td>Guess, Casio</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                `
+            },
+            {
+                title: 'Quais são as tecnologias e diferenciais dos relógios da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>Os relógios disponíveis na Dafiti possuem tecnologias e diferenciais que os tornam ainda mais atraentes, como:</p>
+                    <ul>
+                        <li><h4>Resistência à água</h4></li>
+                        <li><h4>Conectividade Bluetooth (para smartwatches)</h4></li>
+                        <li><h4>Funcionalidades de monitoramento de saúde</h4></li>
+                        <li><h4>Diversidade de materiais, como aço inoxidável e silicone</h4></li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como aproveitar todos os descontos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Não perca nenhuma oferta da Black Friday Dafiti</h4>
+                    <p>Para aproveitar todos os descontos, fique atento às promoções antecipadas, baixe o app da Dafiti e siga as redes sociais da marca. Isso garantirá que você esteja sempre atualizado sobre as melhores ofertas e possa aproveitar ao máximo a Black Friday.</p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+
