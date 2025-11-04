@@ -1,0 +1,459 @@
+mixin tenis()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Tênis Black Friday Dafiti<br> <span>Economia e Conforto</span>
+            .boxText
+                p.text Se você está buscando as melhores ofertas em tênis durante a Black Friday, a Dafiti é o seu destino ideal.
+                p.text Com uma ampla variedade de marcas e estilos, nossa seleção de tênis oferece modelos para todos os gostos.
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar os principais modelos de tênis na Black Friday?',
+                bodyAccordion: `
+                    <h4>
+                        Descubra os principais modelos de tênis na Black Friday da Dafiti
+                        com descontos incríveis.
+                    </h4>
+                    <p>
+                        Na Black Friday, você pode encontrar os principais modelos de
+                        tênis na Dafiti, que oferece uma ampla variedade de modelos
+                        casuais, esportivos, de cano alto, médio e baixo. Acesse a
+                        <a href="https://www.dafiti.com.br/tenis/casual/">página especial de Tênis Dafiti</a>
+                        para descobrir todos os estilos disponíveis com descontos
+                        incríveis.
+                    </p>
+                `
+            },
+            {
+                title: 'Quais são os tênis femininos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                        Durante a Black Friday na Dafiti, as mulheres podem encontrar uma
+                        variedade de tênis femininos, incluindo:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis Casuais Femininos com Descontos</a>
+                            </h4>
+                            Ideais para o dia a dia, oferecendo conforto e estilo.
+                        </li>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis/">Tênis Esportivos Femininos em Promoção</a>
+                            </h4>
+                            Para quem pratica atividades físicas, garantindo desempenho e
+                            moda.
+                        </li>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/">Tênis Slip On Femininos com Preços Exclusivos</a>
+                            </h4>
+                            Fáceis de calçar, perfeitos para praticidade e conforto.
+                        </li>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis Estampados Femininos em Oferta</a>
+                            </h4>
+                            Adicione um toque de estilo com padrões e estampas variadas.
+                        </li>
+                    </ul>
+
+                    <p>
+                        As principais marcas como
+                        <strong><a href="https://www.dafiti.com.br/calcados/adidas-originals/">Adidas</a></strong>,
+                        <strong><a href="https://www.dafiti.com.br/converse/">Converse</a></strong>,
+                        <strong><a href="https://www.dafiti.com.br/calcados-femininos/tenis/vizzano/">Vizzano</a></strong>
+                        e
+                        <strong><a href="https://www.dafiti.com.br/calcados-femininos/tenis/santa-lolla/">Santa Lolla</a></strong>
+                        oferecem opções incríveis em todos esses tipos de tênis,
+                        permitindo que as mulheres aproveitem descontos especiais durante
+                        as promoções da Black Friday na Dafiti.
+                    </p>
+                `
+            },
+            {
+                title: 'Quais são os tênis masculinos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>
+                    Os homens também têm uma vasta seleção de tênis masculinos na
+                    Black Friday Dafiti. Você encontrará opções como:
+                    </h4>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/esporte-masculino/calcados-tenis/">Tênis Esportivos Masculinos com Preços Exclusivos</a>
+                        </h4>
+                        Modelos de marcas renomadas para o máximo desempenho.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">Tênis Casuais Masculinos em Promoção</a>
+                        </h4>
+                        Estilos versáteis perfeitos para diversas ocasiões.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">Tênis Elegantes Masculinoscom Descontos</a>
+                        </h4>
+                        Opções mais formais para um toque de sofisticação.
+                    </li>
+                    </ul>
+                    <p>
+                    Marcas como
+                    <strong><a href="https://www.dafiti.com.br/calcados/nike/">Nike</a></strong>,
+                    <strong><a href="https://www.dafiti.com.br/calcados/adidas-originals/">Adidas</a></strong>,
+                    <strong><a href="https://www.dafiti.com.br/converse/">Converse</a></strong>
+                    e muito mais estão disponíveis, todos com descontos especiais
+                    durante a Black Friday na Dafiti.
+                    </p>
+                `
+            },
+            {
+                title: 'Quais são as principais marcas de tênis na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados/nike/">Black Friday Nike</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados/adidas-originals/">Black Friday Adidas</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/converse/">Black Friday Converse</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis/vizzano/">Black Friday Vizzano</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis/santa-lolla/">Black Friday Santa Lolla</a>
+                        </h4>
+                    </li>
+                    </ul>
+                    <p>
+                    Estas marcas renomadas oferecem uma variedade de estilos, desde
+                    casuais até esportivos, garantindo qualidade e moda para os
+                    clientes durante as promoções da Black Friday na Dafiti.
+                    </p>
+                `
+            },
+            {
+                title: 'Como combinar os modelos de tênis com o look do dia a dia na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <table border="1">
+                        <tbody><tr>
+                            <th>Modelo de Tênis</th>
+                            <th>Ocasiões de Uso</th>
+                            <th>Dicas de Look para Homens</th>
+                            <th>Dicas de Look para Mulheres</th>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis Casual</a>
+                            </td>
+                            <td>Atividades do dia a dia</td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                            e
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">camiseta</a>
+                            para um look descontraído.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestidos/">vestidos</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                            para um toque moderno e feminino.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis/">Tênis Esportivos</a>
+                            </td>
+                            <td>Atividades físicas e esportes</td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/esporte-masculino/roupas/">roupas de academia</a>
+                            e
+                            <a href="https://www.dafiti.com.br/esporte-masculino/roupas-bermudas-e-shorts/">shorts</a>
+                            para conforto durante o exercício.
+                            </td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                            e
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas-regata/">regatas</a>
+                            para um look esportivo e elegante.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-masculinos/tenis-para-corrida/">Tênis de Performance</a>
+                            </td>
+                            <td>Atividades físicas intensas e corridas</td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/esporte-masculino/roupas/">roupas de corrida</a>
+                            e
+                            <a href="https://www.dafiti.com.br/esporte-masculino/roupas-bermudas-e-shorts/">shorts</a>
+                            para desempenho máximo.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                            e
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">camisetas respiráveis</a>
+                            para conforto durante o exercício.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/">Tênis Slip On</a>
+                            </td>
+                            <td>Conveniência e conforto</td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/bermudas/">bermudas</a>
+                            e
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">camisetas</a>
+                            para um estilo prático.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestidos/">vestidos</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                            para um visual moderno e sem esforço.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis de Cano Alto</a>
+                            </td>
+                            <td>Passeios casuais e encontros</td>
+                            <td>
+                            Fique estiloso com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">calças chino</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/polos/">camisa polo</a>.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">shorts</a>
+                            para um visual moderno e descontraído.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis de Cano Médio</a>
+                            </td>
+                            <td>Eventos casuais e saídas com amigos</td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/casacos-e-jaquetas-jaqueta/">jaqueta</a>
+                            para um visual descolado.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">shorts</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas/">blusa solta</a>
+                            para um look descontraído.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/tenis/casual/">Tênis de Cano Baixo</a>
+                            </td>
+                            <td>Uso diário e passeios informais</td>
+                            <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais-sarja/">calças de sarja</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/camisas/">camisa</a>
+                            para um estilo casual elegante.
+                            </td>
+                            <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">shorts</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas/">blusa</a>
+                            para um look leve e fresco.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            {
+                title: 'Como encontrar os melhores produtos com desconto na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Encontre as Melhores Ofertas na Black Friday Dafiti</h4>
+                    <p>
+                        Para encontrar os melhores produtos com desconto na Black Friday
+                        Dafiti,
+                        <a href="https://www.dafiti.com.br/">visite o site da Dafiti</a> e
+                        baixe o app. Além disso, fique atento às promoções especiais,
+                        descontos progressivos e ofertas relâmpago que são comuns durante
+                        o período da Black Friday. Também é uma boa ideia se inscrever na
+                        newsletter da Dafiti para receber atualizações exclusivas sobre
+                        ofertas e descontos especiais.
+                    </p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

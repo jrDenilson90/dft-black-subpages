@@ -1,0 +1,489 @@
+mixin vestidos()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Vestidos Black Friday Dafiti<br> <span>Estilo Ideal com Descontos Incríveis</span>
+            .boxText
+                p.text Na Black Friday na Dafiti a moda encontra os melhores descontos!
+                p.text Aqui você encontra diversos modelos de vestidos com o seu estilo e preços imperdíveis.
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar os melhores vestidos com descontos na Black Friday?',
+                bodyAccordion: `
+                    <h4>Conheça a Black Friday Dafiti</h4>
+                    <p>
+                        A Black Friday Dafiti é o lugar ideal para encontrar uma ampla
+                        variedade de vestidos com descontos incríveis. Durante o evento, a
+                        Dafiti oferece descontos especiais em uma variedade de vestidos de
+                        diferentes estilos e marcas. Desde vestidos curtos e casuais até
+                        vestidos longos e elegantes para ocasiões especiais, a Black
+                        Friday Dafiti oferece opções para todos os gostos e necessidades.
+                    </p>
+                `
+            },
+            {
+                title: 'Quais são os diferentes tipos de vestidos encontrados na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                    Na Black Friday Dafiti, você encontrará uma variedade incrível de
+                    vestidos para todas as ocasiões. Abaixo estão os diferentes tipos
+                    de vestidos que você pode encontrar:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/vestido-curto/">Vestidos Curtos em Promoção</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/vestido-midi/">Vestidos Midi com Descontos</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/vestido-longo/">Vestidos Longos com Preços Especiais</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/">Vestidos Chemise em Oferta</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/">Vestidos Kaftan com os Melhores Descontos</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/vestidos-jeans/">Vestidos Jeans com Preços Exclusivos</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/vestido-de-festa/">Vestidos de Festa em Liquidação</a>
+                        </h4>
+                    </li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Quais as principais marcas de vestidos na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                    Durante a Black Friday Dafiti, você terá acesso a uma variedade de
+                    marcas renomadas de vestidos. Conheça algumas das principais
+                    marcas que oferecem descontos exclusivos durante o evento:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/mango/">Black Friday Mango</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/lez-a-lez/">Black Friday Lez a Lez</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/hering/">Black Friday Hering</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/farm/">Black Friday Farm</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/fiveblu/">Black Friday FiveBlu</a>
+                        </h4>
+                    </li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como acertar no look com os vestidos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>
+                    Guia de Estilo: Como Acertar no Look com os Vestidos da Black
+                    Friday Dafiti
+                    </h4>
+                    <table border="1">
+                        <tbody><tr>
+                            <th>Tipo de Vestido</th>
+                            <th>Evento</th>
+                            <th>Acessórios</th>
+                            <th>Calçados</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestido-longo/">Longo</a>
+                            </td>
+                            <td>Casamento</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-carteira-clutch/">Clutch</a>,<a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-brincos/">
+                                Brincos Longos</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias de Salto Alto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Festa Noturna</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-carteira-clutch/">Clutch</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-colares/">Colar Statement</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/scarpins/">Scarpin de Salto Alto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Passeio Sofisticado</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/">Bolsa de Mão</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias de Salto Médio</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jantar Elegante</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-brincos/">Brincos</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/scarpins/">Sapatos de Salto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Festa de Gala</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-carteira-clutch/">Clutch</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-colares/">Colar Statement</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias de Salto Alto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">
+                            <a href="https://www.dafiti.com.br/vestido-midi/">Midi</a>
+                            </td>
+                            <td>Almoço com Amigos</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-transversal/">Bolsa Transversal</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sapatilhas/">Sapatilhas</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias de Salto Baixo</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Eventos Diurnos</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/oculos/">Óculos de Sol</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Braceletes</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/rasteiras/">Rasteirinhas</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/">Botas de Cano Curto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Passeio na Cidade</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/">Bolsa de Ombro</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-colares/">Colares</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis/">Tênis Confortáveis</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/">Botas Estilosas</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestido-curto/">Curto</a>
+                            </td>
+                            <td>Encontro Casual</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/">Bolsa de Ombro</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sapatilhas/">Sapatilhas</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias Baixas</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestido-de-festa/">De Festa</a>
+                            </td>
+                            <td>Festa de Gala</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-carteira-clutch/">Clutch</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-colares/">Colar Statement</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias de Salto Alto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/">Chemise</a>
+                            </td>
+                            <td>Almoço com Amigos</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-transversal/">Bolsa Transversal</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/rasteiras/">Rasteirinhas</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/">Botas de Cano Curto</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/">Kaftan</a>
+                            </td>
+                            <td>Praia ou Piscina</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/chapeus/">Chapéu</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/oculos/">Óculos de Sol</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/chinelos/">Chinelos</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">Sandálias Confortáveis</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="https://www.dafiti.com.br/vestidos-jeans/">Jeans</a>
+                            </td>
+                            <td>Passeio Descontraído</td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/mochilas-e-malas/">Mochila</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bijuterias-pulseiras/">Pulseiras</a>
+                            </td>
+                            <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis/">Tênis</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/">Botas</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            {
+                title: 'Como escolher o vestido ideal na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <h4>Na Black Friday Dafiti Você Encontra os Melhores Vestidos</h4>
+                    <p>
+                        Para escolher o vestido ideal, leve em consideração seu estilo
+                        pessoal, o tipo de evento que você planeja participar e seu
+                        orçamento. Além disso, confira as descrições dos produtos,
+                        tamanhos disponíveis e políticas de devolução para tomar uma
+                        decisão informada. Certifique-se de verificar as medidas do
+                        vestido para garantir um ajuste perfeito.
+                    </p>
+                `
+            },
+            {
+                title: 'Como aproveitar a Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                        Prepare-se para fazer as melhores compras durante a Black Friday
+                        Dafiti com estas dicas úteis. Aproveite as ofertas incríveis
+                        seguindo estas orientações:
+                    </p>
+                    <h4>1. Faça uma Lista de Desejos</h4>
+                    <p>
+                        Antes do evento, planeje-se! Faça uma lista dos vestidos que você
+                        deseja adicionar ao seu guarda-roupa. Ter uma lista organizada
+                        facilitará sua busca durante a Black Friday.
+                    </p>
+                    <h4>2. Cadastre-se para Alertas</h4>
+                    <p>
+                        Não perca nenhuma oferta especial! Cadastre-se no site da Dafiti
+                        para receber alertas instantâneos sobre ofertas exclusivas e
+                        descontos especiais para membros. Esteja sempre atualizado com as
+                        melhores oportunidades.
+                    </p>
+                    <h4>3. Baixe o App</h4>
+                    <p>
+                        A praticidade está a um toque de distância! Baixe o aplicativo
+                        Dafiti para acesso instantâneo às ofertas da Black Friday,
+                        notificações em tempo real e uma experiência de compra intuitiva.
+                        Com o aplicativo, você terá vantagens exclusivas na ponta dos
+                        dedos.
+                    </p>
+                    <h4>4. Aproveite os Descontos</h4>
+                    <p>
+                        Vá além das ofertas padrão! Procure por códigos promocionais
+                        adicionais que possam ser aplicados aos vestidos de sua escolha.
+                        Cada desconto extra conta e pode levar a economias surpreendentes.
+                    </p>
+                    <h4>5.Compre Agora, Não Espere</h4>
+                    <p>
+                        Lembre-se, as ofertas da Black Friday são geralmente limitadas.
+                        Esteja pronto para agir rapidamente assim que encontrar o vestido
+                        dos seus sonhos com um desconto irresistível. Não espere demais,
+                        pois os estoques podem se esgotar rapidamente.
+                    </p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

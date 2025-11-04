@@ -1,0 +1,516 @@
+mixin camisetas()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Camiseta Black Friday Dafiti<br> <span>Estilo e Descontos</span>
+            .boxText
+                p.text Se você está em busca das melhores ofertas em camisetas durante a Black Friday, a Dafiti é o seu destino ideal.
+                p.text Com uma vasta seleção de marcas e estilos, nossa coleção de camisetas oferece opções femininas e masculinas para todos os gostos.
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde encontrar os melhores modelos de camisetas na Black Friday?',
+                bodyAccordion: `
+                    <h4>
+                        Descubra as camisetas da Black Friday da Dafiti com descontos
+                        incríveis.
+                    </h4>
+                    <p>
+                        Na Black Friday, você pode encontrar os melhores modelos de
+                        camisetas na Dafiti, opções retas, slim, manga curta, manga longa,
+                        gola redonda, gola V e muito mais. Acesse a
+                        <a href="https://www.dafiti.com.br/">a Dafiti</a> e descubra todos
+                        os estilos disponíveis com descontos incríveis.
+                    </p>
+                `
+            },
+            {
+                title: 'Quais são as marcas de camisetas femininas na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                    Durante a Black Friday na Dafiti, as mulheres podem encontrar uma
+                    grande variedade de camisetas femininas, incluindo:
+                    </p>
+
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Reta Feminina em Oferta</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Oversized Feminina com Desconto</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Manga Curta Feminina em Promoção</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/camisetas/">Camiseta Manga Longa Feminina em Liquidação</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Casual Feminina com Preços Exclusivos</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/esporte-feminino/roupas-camisetas/">Camiseta Esportiva Feminina com Descontos Especiais</a>
+                        </h4>
+                    </li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Quais são as marcas de camisetas masculinas na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                    Os homens também têm uma vasta seleção de camisetas masculinas na
+                    Black Friday Dafiti. Você encontrará opções como:
+                    </p>
+
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camisetas Reta Masculinas em Oferta</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Slim Masculina com Desconto</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Manga Curta Masculina em Promoção</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Manga Longa Masculina em Liquidação</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Casual Masculina com Preços Exclusivos</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/esporte-masculino/roupas-camisetas/">Camiseta Esportiva Masculina com Descontos Especiais</a>
+                        </h4>
+                    </li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Quais as principais marcas de camisetas na Black Friday Dafiti?',
+                bodyAccordion: `
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/nike/">Black Friday Nike</a>
+                        </h4>
+                        Uma das maiores marcas esportivas do mundo, conhecida por sua
+                        inovação e qualidade em produtos esportivos.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/gap/">Black Friday GAP</a>
+                        </h4>
+                        Uma marca americana que oferece moda casual e contemporânea para
+                        todas as idades, conhecida por seus designs clássicos e
+                        confortáveis.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/hering/">Black Friday Hering</a>
+                        </h4>
+                        Uma marca brasileira conhecida por suas peças básicas e casuais,
+                        oferecendo qualidade e estilo a preços acessíveis.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/colcci/">Black Friday Colcci</a>
+                        </h4>
+                        Uma marca de moda brasileira reconhecida por suas coleções
+                        modernas e sofisticadas, representando o estilo jovem e urbano.
+                    </li>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/tommy-jeans/">Black Friday Tommy Jeans</a>
+                        </h4>
+                        Parte da renomada marca Tommy Hilfiger, a Tommy Jeans oferece
+                        moda jovem e casual, com foco em peças denim e estilo
+                        descontraído.
+                    </li>
+                    </ul>
+                `
+            },
+            {
+                title: 'Como acertar no look do dia a dia com as camisetas da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <table border="1">
+                    <tbody><tr>
+                        <th>Modelo de Camiseta</th>
+                        <th>Ocasiões de Uso</th>
+                        <th>Dicas de Look para Homens</th>
+                        <th>Dicas de Look para Mulheres</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Reta</a>
+                        </td>
+                        <td>Atividades do dia a dia</td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/sapato-casual/">sapatos casuais</a>
+                        para um look descontraído.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans/">calças jeans</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-femininos/sapatilhas/">sapatilhas</a>
+                        para um visual elegante e confortável.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Slim</a>
+                        </td>
+                        <td>Encontros e eventos sociais</td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais-sarja/">calças de sarja</a>
+                        e um
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/">sapato social</a>
+                        para um visual sofisticado.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/">sandálias</a>
+                        para um estilo elegante e moderno.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Oversized</a>
+                        </td>
+                        <td>Estilo casual e descontraído.</td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/bermudas/">bermudas</a>
+                        ou
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">calças largas</a>
+                        para um visual moderno e confortável.
+                        </td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                        ou
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans-calca-skinny/">jeans skinny</a>
+                        para equilibrar o visual volumoso da camiseta.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Manga Curta</a>
+                        </td>
+                        <td>Atividades ao ar livre</td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/bermudas/">bermudas</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/chinelos/">chinelos</a>
+                        para um visual descontraído.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">shorts</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis/">tênis casuais</a>
+                        para um look esportivo e confortável.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">Camiseta Manga Longa</a>
+                        </td>
+                        <td>Noites frescas</td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">calças de algodão</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-masculinos/sapato-casual/">sapatos casuais</a>
+                        para um visual aconchegante.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                        e
+                        <a href="https://www.dafiti.com.br/calcados-femininos/sapatilhas/">sapatilhas</a>
+                        para um look elegante e relaxado.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">Camiseta Casual</a>
+                        </td>
+                        <td>Eventos sociais e encontros</td>
+                        <td>
+                        Fique elegante com
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais-sarja/">calças de sarja</a>
+                        e um
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/camisas/">camisa social</a>.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                        e um
+                        <a href="https://www.dafiti.com.br/roupas-femininas/casacos-e-jaquetas-jaqueta/">jaqueta solta</a>
+                        para um visual moderno e descontraído.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <a href="https://www.dafiti.com.br/esporte-masculino/roupas-camisetas/">Camiseta Esportiva</a>
+                        </td>
+                        <td>Atividades físicas e esportes</td>
+                        <td>
+                        Combine com
+                        <a href="https://www.dafiti.com.br/esporte-masculino/roupas-bermudas-e-shorts/">bermudas esportivas</a>
+                        e
+                        <a href="https://www.dafiti.com.br/esporte-masculino/calcados-tenis/">tênis esportivos</a>
+                        para máximo desempenho.
+                        </td>
+                        <td>
+                        Use com
+                        <a href="https://www.dafiti.com.br/esporte-feminino/roupas-calcas/">calças legging esportivas</a>
+                        e
+                        <a href="https://www.dafiti.com.br/esporte-feminino/roupas-top/">top esportivo</a>
+                        para conforto durante os exercícios.
+                        </td>
+                    </tr>
+                    </tbody></table>
+                `
+            },
+            {
+                title: 'Como não perder os melhores descontos da Black Friday Dafiti?',
+                bodyAccordion: `
+                    <p>
+                    Para não perder os melhores descontos da Black Friday Dafiti, siga
+                    estas dicas:
+                    </p>
+
+                    <ol>
+                    <li>
+                        <h4>Inscreva-se na Newsletter</h4>
+                        Cadastre-se na newsletter da Dafiti para receber atualizações
+                        por e-mail sobre ofertas especiais, descontos exclusivos e
+                        promoções relâmpago.
+                    </li>
+
+                    <li>
+                        <h4>Baixe o Aplicativo</h4>
+                        Faça o download do aplicativo da Dafiti para receber
+                        notificações instantâneas sobre ofertas e descontos especiais
+                        durante a Black Friday.
+                    </li>
+
+                    <li>
+                        <h4>Siga nas Redes Sociais</h4>
+                        Siga a Dafiti nas redes sociais para ficar por dentro das
+                        últimas novidades e promoções exclusivas anunciadas nas
+                        plataformas de mídia social.
+                    </li>
+
+                    <li>
+                        <h4>Prepare sua Lista de Desejos</h4>
+                        Antes da Black Friday,
+                        <a href="https://www.dafiti.com.br/">navegue pelo site da Dafiti</a>
+                        e adicione os produtos desejados à sua lista de desejos. Assim,
+                        você poderá verificar facilmente se esses itens estão com
+                        descontos durante a Black Friday.
+                    </li>
+
+                    <li>
+                        <h4>Fique Atento aos Horários</h4>
+                        Alguns descontos podem ser oferecidos em horários específicos do
+                        dia durante a Black Friday. Fique atento aos horários de início
+                        e término das ofertas para garantir que você não perca as
+                        promoções.
+                    </li>
+
+                    <li>
+                        <h4>Compare Preços</h4>
+                        Antes de fazer uma compra, compare os preços dos produtos em
+                        diferentes lojas e verifique se a oferta da Dafiti realmente
+                        oferece o melhor desconto.
+                    </li>
+
+                    <li>
+                        <h4>Se Planeje com Antecedência</h4>
+                        Tenha uma ideia clara dos produtos que você deseja comprar
+                        durante a Black Friday. Planeje com antecedência para que você
+                        possa agir rapidamente quando as ofertas estiverem disponíveis.
+                    </li>
+
+                    <li>
+                        <h4>Esteja Conectado</h4>
+                        Certifique-se de ter uma conexão estável à internet para evitar
+                        problemas durante o processo de compra. Uma conexão rápida pode
+                        ajudá-lo a garantir os produtos antes que eles se esgotem.
+                    </li>
+                    </ol>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+
