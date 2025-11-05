@@ -114,7 +114,8 @@ p {
         .line {
             font-size: 3em;
             text-align: center;
-            font-weight: 700;
+            font-weight: 300;
+            text-transform: uppercase;
         }
         h2 {
             opacity: 0;
@@ -135,6 +136,46 @@ p {
         }
         .glitch + p {
             margin-top: .5em;
+        }
+        .flexCardsImgs {
+            display: flex;
+            justify-content: center;
+            gap: 3em;
+            width: 90%;
+            max-width: 700px;
+            margin: 3em auto 2em;
+            @media (max-width: $tablet-size) {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 45%;
+                @media (max-width: $tablet-size) {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+                img {
+                    width: 100%;
+                }
+                .glitch {
+                    margin-top: 1em;
+                    .line {
+                        font-size: 2.2em;
+                        font-weight: 300;
+                        strong {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .card + .card {
+                margin-top: 7em;
+                @media (max-width: $tablet-size) {
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
