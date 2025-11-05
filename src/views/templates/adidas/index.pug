@@ -1,0 +1,771 @@
+mixin adidas()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Adidas na Black Friday é na Dafiti<br> <span>Os Maiores Descontos do Ano!</span>
+            .boxText
+                p.text Garanta Tênis, Roupas e Acessórios Adidas (Performance e Originals)
+                p.text na Black Friday da Dafiti, a marca das melhores marcas!
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Produtos Adidas em Destaque na Black Friday Dafiti
+            a(href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/") 
+                h3 Tênis Adidas na Black
+            p Superstar, Ultraboost, Gazelle, Pharrel Williams e muito mais. Descubra todos os modelos de Tênis Adidas na Black Friday Dafiti com os melhores descontos do ano.
+            a(href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/") 
+                h3 Roupas Adidas na Black
+            p Seja para um treino na academia ou para um rolê casual, a Adidas está com você! Descubra camisetas, calças, bermudas e mais roupas Adidas na Black Friday Dafiti. com preços imperdíveis nesta Black Friday.
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/") 
+                h3 Acessórios Adidas na Black
+            p Bonés, Mochilas, Pochetes, Shoulder bag e mais Acessórios Adidas na Black Friday Dafiti! Escolha seus preferidos na Black Friday Dafiiti, a marca das melhores marcas!.
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Onde Encontrar Ofertas Incríveis em Produtos Adidas na Black Friday?',
+                bodyAccordion: `
+                    <h4>Adidas na Black Friday é na Dafiti!</h4>
+                    <p>
+                    Na <a href="https://www.dafiti.com.br/">Dafiti</a>, você terá
+                    acesso a uma vasta seleção de produtos Adidas com descontos
+                    irresistíveis durante a Black Friday. Prepare-se para aproveitar
+                    as melhores promoções do ano e atualize seu estilo esportivo com
+                    produtos de alta qualidade da Adidas.
+                    </p>
+                    <p>
+                    Aqui estão algumas das vantagens de fazer suas compras na Dafiti
+                    durante a Black Friday da Adidas:
+                    </p>
+                    <ul>
+                    <li>
+                        Descontos exclusivos em
+                        <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">tênis</a>,
+                        <a href="https://www.dafiti.com.br/adidas-originals/">roupas</a>
+                        e
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">acessórios</a>
+                        Adidas.
+                    </li>
+                    <li>
+                        Variedade de estilos e modelos para
+                        <a href="https://www.dafiti.com.br/tr_adidas_mascloja/">homens</a>,
+                        <a href="https://www.dafiti.com.br/tr_adidas_femloja/">mulheres</a>
+                        e
+                        <a href="https://www.dafiti.com.br/tr_adidas_kidsloja/">crianças</a>.
+                    </li>
+                    <li>
+                        Conveniência das compras online com entrega rápida e segura.
+                    </li>
+                    <li>
+                        Atendimento ao cliente excepcional para esclarecer todas as suas
+                        dúvidas.
+                    </li>
+                    <li>Garantia de produtos originais da Adidas.</li>
+                    </ul>
+                    <p>
+                    Não perca esta oportunidade única de economizar enquanto aprimora
+                    seu guarda-roupa esportivo com a qualidade e o estilo
+                    incomparáveis da Adidas. Venha para a Black Friday da Dafiti e
+                    garanta já suas peças favoritas da Adidas.
+                    </p>
+                `
+            },
+            {
+                title: 'Modelos de Tênis Adidas na Black Friday',
+                bodyAccordion: `
+                    <p>
+                        Descubra os melhores modelos de tênis Adidas com descontos
+                        incríveis durante a Black Friday na Dafiti. Explore nossa seleção
+                        exclusiva de:
+                    </p>
+                    <ul>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Superstar Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            O clássico Adidas Superstar é sinônimo de estilo e
+                            versatilidade. Combine-o com jeans e uma jaqueta para um visual
+                            casual ou use-o com roupas esportivas para um toque de elegância
+                            em seus treinos.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Ultraboost Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os tênis Adidas Ultraboost são projetados para oferecer o máximo
+                            de conforto e desempenho. Use-os em suas corridas e treinos
+                            intensos. Complemente com roupas técnicas para alcançar seu
+                            melhor desempenho.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Gazelle Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os Adidas Gazelle têm um charme retro inconfundível. São ideais
+                            para um estilo descontraído. Combine com calças jeans e uma
+                            camiseta básica para um visual atemporal.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Pharrell Williams Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            A colaboração Adidas Pharrell Williams oferece tênis únicos e
+                            cheios de estilo. Use-os para mostrar sua personalidade. Combine
+                            com roupas coloridas e acessórios ousados para um visual
+                            autêntico.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Stan Smith Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os Adidas Stan Smith são conhecidos por sua simplicidade e
+                            design limpo. São ideais para um look elegante e casual. Use-os
+                            com calças chino e uma camisa para um visual sofisticado.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Originals EQT Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os tênis Adidas Originals EQT têm um toque retrô com tecnologia
+                            moderna. São ótimos para um estilo urbano. Combine com roupas de
+                            streetwear para um visual contemporâneo.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Continental Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os Adidas Continental têm um visual inspirado nos anos 80. São
+                            perfeitos para um estilo retrô em alta. Use com jeans e uma
+                            jaqueta de couro para um visual vintage.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Deerupt Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os tênis Adidas Deerupt se destacam pelo design de rede elástica
+                            que envolve o calçado. São ideais para um visual moderno e
+                            urbano. Combine com roupas descoladas para um look
+                            contemporâneo.
+                        </p>
+                    </ul>
+                    <p>
+                        Aproveite as ofertas imperdíveis da Black Friday para adquirir
+                        esses
+                        <a href="https://www.dafiti.com.br/loja-adidas/">modelos icônicos da Adidas</a>
+                        e elevar seu estilo a um novo patamar durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Roupas Adidas na Black Friday',
+                bodyAccordion: `
+                    <p>
+                        Encontre as melhores
+                        <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/">roupas da Adidas</a>
+                        com descontos imperdíveis durante a Black Friday na Dafiti.
+                        Confira nossa seleção exclusiva de:
+                    </p>
+                    <ul>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta Dry Fit Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            As camisetas Dry Fit da Adidas são ideais para suas atividades
+                            esportivas. Mantenha-se fresco e seco durante os treinos.
+                            Combine com shorts ou calças de treino para um visual esportivo.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta Casual Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            As camisetas casuais da Adidas oferecem versatilidade e estilo.
+                            Use-as para um visual descontraído ou combine com jeans para um
+                            look casual e moderno.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisas/">Camisa Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            As camisas da Adidas são perfeitas para ocasiões mais formais.
+                            Use-as com calças sociais para um visual elegante e profissional
+                            em eventos especiais.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas-regatas/">Regata Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            As regatas da Adidas são ideais para seus treinos intensos.
+                            Fique confortável e mantenha a liberdade de movimento. Combine
+                            com shorts ou calças de academia para um visual esportivo.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_femloja/roupas-femininas/shorts/">Shorts Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            Os shorts da Adidas são excelentes para atividades esportivas e
+                            uso casual. Use-os com camisetas ou regatas para um look
+                            esportivo e confortável.
+                        </p>
+                        <li>
+                            <h4>
+                            <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/bermudas/">Bermuda Casual Adidas Black Friday</a>
+                            </h4>
+                        </li>
+                        <p>
+                            As bermudas casuais da Adidas são ideais para o dia a dia.
+                            Use-as com camisetas ou camisas para um visual descontraído e
+                            elegante em suas atividades diárias.
+                        </p>
+                    </ul>
+                    <p>
+                        Aproveite as ofertas incríveis da Black Friday para renovar seu
+                        guarda-roupa com roupas de alta qualidade da Adidas. Seja para
+                        esportes ou para o dia a dia, você encontrará as peças ideais
+                        durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Acessórios Adidas na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Encontre os melhores
+                    <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">acessórios da Adidas</a>
+                    com descontos incríveis durante a Black Friday na Dafiti. Confira
+                    nossa seleção especial de:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">Boné Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Os bonés da Adidas são ideais para proteção contra o sol e um
+                        estilo esportivo. Use-os durante atividades ao ar livre ou para
+                        complementar seu visual casual.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">Chapéu Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Os chapéus da Adidas oferecem estilo e proteção contra o sol.
+                        Use-os em passeios ao ar livre e na praia para um look
+                        descontraído e elegante.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/meias/adidas--adidas-originals--adidas-performance/">Meias Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As meias da Adidas são essenciais para o conforto durante
+                        atividades físicas. Escolha entre diferentes estilos, incluindo
+                        meias esportivas e casuais, para atender às suas necessidades.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Mochila Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As mochilas da Adidas são ideais para transportar seus pertences
+                        com estilo. Use-as para a escola, academia ou viagens, mantendo
+                        tudo organizado.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Pochete Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As pochetes da Adidas são práticas e estilosas. Mantenha seus
+                        itens essenciais à mão enquanto adiciona um toque de moda ao seu
+                        visual, seja em passeios urbanos ou eventos casuais.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Shoulder Bag Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As shoulder bags da Adidas são perfeitas para carregar seus
+                        itens essenciais de forma elegante. Use-as em passeios urbanos e
+                        eventos casuais, mantendo seu estilo em destaque.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">Outros Acessórios Adidas Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Além dos itens acima, a Adidas oferece uma variedade de outros
+                        acessórios, como cintos, luvas, óculos de sol e muito mais.
+                        Explore nossa coleção completa durante a Black Friday e encontre
+                        os acessórios que complementam o seu estilo.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas especiais da Black Friday para adquirir esses
+                    acessórios da Adidas a preços imperdíveis. Complete seu visual
+                    esportivo e casual com qualidade durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Dicas Exclusivas para Aproveitar Adidas na Black Friday Dafiti',
+                bodyAccordion: `
+                    <h4>
+                        Guia de Dicas: Garanta os melhores produtos Adidas na Black Friday
+                        Dafiti
+                    </h4>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                            <th>Situação</th>
+                            <th>Dicas de Tênis Adidas</th>
+                            <th>Dicas de Roupas Adidas</th>
+                            <th>Dicas de Acessórios Adidas</th>
+                            <th>Look Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td rowspan="4">Academia</td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Ultraboost</a>
+                                para flexibilidade
+                            </td>
+                            <td rowspan="3">
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta</a>
+                                de treino e
+                                <a href="https://www.dafiti.com.br/tr_adidas_femloja/roupas-femininas/shorts/">shorts</a>
+                                Adidas
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/roupas-femininas/meias/adidas--adidas-originals--adidas-performance/">Meias</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">boné</a>
+                            </td>
+                            <td>Visual esportivo e confortável para treinos intensos</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Alphabounce</a>
+                                para corridas na esteira
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/roupas-femininas/meias/adidas--adidas-originals--adidas-performance/">Meias</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas-regatas/">regata</a>
+                                de treino
+                            </td>
+                            <td>Visual funcional para treinos variados</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Powerlift</a>
+                                para treinamento de peso
+                            </td>
+                            <td>
+                                Leggings Adidas e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas-regatas/">regata</a>
+                                de treino
+                            </td>
+                            <td>
+                                Visual resistente e versátil para levantamento de peso
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Stan Smith</a>
+                                para estilo casual
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta</a>
+                                casual e
+                                <a href="https://www.dafiti.com.br/tr_adidas_femloja/roupas-femininas/shorts/">shorts</a>
+                                Adidas
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Bolsa</a>
+                                Adidas e fone de ouvido sem fio
+                            </td>
+                            <td>Conforto superior para corridas e treinos cardio</td>
+                            </tr>
+                            <tr>
+                            <td rowspan="3">Caminhada/Corrida</td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Ultraboost</a>
+                                para amortecimento
+                            </td>
+                            <td rowspan="2">
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta de manga longa</a>
+                                e leggings Adidas
+                            </td>
+                            <td rowspan="2">
+                                <a href="https://www.dafiti.com.br/roupas-femininas/meias/adidas--adidas-originals--adidas-performance/">Meias</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">boné</a>
+                            </td>
+                            <td>
+                                Look esportivo e funcional para atividades ao ar livre
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Solarboost</a>
+                                para corridas na rua
+                            </td>
+                            <td>Visual resistente e versátil para corridas</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Pharrel Williams</a>
+                                para conforto
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/moletons/">Moletom</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/tr_adidas_femloja/roupas-femininas/shorts/">shorts</a>
+                                de corrida
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/roupas-femininas/meias/adidas--adidas-originals--adidas-performance/">Meias</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">braçadeira para celular</a>
+                            </td>
+                            <td>Conforto extremo para caminhadas e corridas leves</td>
+                            </tr>
+                            <tr>
+                            <td rowspan="3">Churrasco</td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Gazelle</a>
+                                para estilo casual
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/bermudas/">Bermuda casual</a>
+                                e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">camiseta casual</a>
+                                Adidas
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">Chapéu</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">mochila</a>
+                            </td>
+                            <td>
+                                Visual descontraído e elegante para eventos ao ar livre
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Continental</a>
+                                para versatilidade
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/calcas-casuais/">Calça</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">camiseta casual</a>
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Pochete</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">óculos de sol</a>
+                            </td>
+                            <td>Estilo casual e confortável para churrascos</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Deerupt</a>
+                                para um toque moderno
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/bermudas/">Bermuda casual</a>
+                                e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">camiseta casual</a>
+                                Adidas
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">Chapéu</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">mochila</a>
+                            </td>
+                            <td>Visual com toque moderno para churrascos</td>
+                            </tr>
+                            <tr>
+                            <td rowspan="3">Passeio Familiar</td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Stan Smith</a>
+                                para versatilidade
+                            </td>
+                            <td rowspan="2">
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas/">Camiseta casual</a>
+                                e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/calcas-casuais/">calça</a>
+                                Adidas
+                            </td>
+                            <td rowspan="2">
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">Shoulder bag</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/adidas--adidas-originals--adidas-performance/">óculos de sol</a>
+                            </td>
+                            <td>Visual casual e confortável para passeios em família</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Originals EQT</a>
+                                para conforto
+                            </td>
+                            <td>Visual moderno e descontraído para passeios</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <a href="https://www.dafiti.com.br/calcados/adidas-sportswear--adidas-performance--adidas-originals--adidas/">Adidas Superstar</a>
+                                para leveza
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/tr_adidas_femloja/roupas-femininas/shorts/">Shorts</a>
+                                e
+                                <a href="https://www.dafiti.com.br/tr_adidas_mascloja/roupas-masculinas/camisetas-regatas/">regata</a>
+                                casual Adidas
+                            </td>
+                            <td>
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/bones-e-chapeus/adidas--adidas-originals--adidas-performance/">Chapéu</a>
+                                Adidas e
+                                <a href="https://www.dafiti.com.br/bolsas-e-acessorios-masculinos/mochilas-e-malas/adidas-originals--adidas-performance--adidas/">mochila</a>
+                            </td>
+                            <td>Estilo leve e fresco para passeios em família</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        Aqui estão as dicas exclusivas para aproveitar os produtos Adidas
+                        na Black Friday Dafiti. Garanta os melhores tênis, roupas e
+                        acessórios da Adidas para diversas situações e crie looks finais
+                        incríveis!
+                    </p>
+
+                    <h4>
+                        Guia para Encontrar o Produto Perfeito na Black Friday Dafiti
+                    </h4>
+                    <p>
+                        A Black Friday Dafiti oferece oportunidades incríveis para
+                        adquirir produtos Adidas com descontos imperdíveis. Para garantir
+                        que você faça escolhas inteligentes durante esse evento de
+                        promoções, siga estas dicas:
+                    </p>
+                    <h5>1. Identifique Suas Necessidades</h5>
+                    <p>
+                        O primeiro passo é determinar exatamente o que você procura. Você
+                        está interessado em tênis esportivos, roupas casuais ou acessórios
+                        da Adidas? Ter clareza sobre suas necessidades é fundamental.
+                    </p>
+                    <h5>2. Estabeleça um Orçamento</h5>
+                    <p>
+                        Antes de começar a busca por ofertas, defina um orçamento claro. A
+                        Black Friday oferece descontos tentadores, mas ter um limite de
+                        gastos ajudará você a evitar gastos excessivos.
+                    </p>
+                    <h5>3. Crie uma Lista de Desejos</h5>
+                    <p>
+                        Anote os produtos Adidas que você deseja adicionar à sua coleção
+                        ou guarda-roupa. Isso o ajudará a focar nas ofertas relevantes
+                        durante a Black Friday.
+                    </p>
+                    <h5>4. Fique de Olho nas Prévias de Ofertas</h5>
+                    <p>
+                        Algumas lojas começam a divulgar ofertas antes do dia oficial da
+                        Black Friday. Esteja atento a essas prévias de ofertas para não
+                        perder grandes descontos.
+                    </p>
+                    <h5>5. Compare Preços e Leia Avaliações</h5>
+                    <p>
+                        Quando encontrar uma oferta tentadora, não se apresse em comprar.
+                        Compare os preços em diferentes lojas e leia as avaliações de
+                        outros compradores para garantir que está fazendo um ótimo negócio
+                        em um produto de qualidade.
+                    </p>
+                    <h5>6. Acompanhe as Promoções</h5>
+                    <p>
+                        Mantenha-se atualizado sobre as promoções da Black Friday Dafiti.
+                        Assine newsletters de lojas e siga-as nas redes sociais para
+                        receber informações sobre descontos e ofertas exclusivas.
+                    </p>
+                    <h5>7. Verifique a Política de Devolução</h5>
+                    <p>
+                        Antes de finalizar a compra, revise a política de devolução da
+                        loja. Certifique-se de que terá a opção de devolver ou trocar o
+                        produto caso não atenda às suas expectativas.
+                    </p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

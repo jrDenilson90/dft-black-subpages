@@ -1,0 +1,556 @@
+mixin gap()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line GAP na Black Friday é na Dafiti<br> <span>Os Maiores Descontos do Ano!</span>
+            .boxText
+                p.text Descubra Molentons, camisetas, blusinhas, calças, acessórios e muito mais na Black Friday da Dafiti, a marca das melhores marcas!
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Produtos GAP em Destaque na Black Friday Dafiti
+            a(href="https://www.dafiti.com.br/roupas-femininas/moletom/gap/") 
+                h3 Moletom GAP na Black
+            p Garanta os desejados moletons da GAP na Black Friday Dafiti com os melhores descontos do ano.
+            a(href="https://www.dafiti.com.br/roupas/gap/") 
+                h3 Roupas GAP na Black
+            p Camisetas, Calças, Regatas e Blusinhas e muito mais em roupas GAP na Black Friday Dafiti
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/gap/") 
+                h3 Acessórios GAP na Black
+            p Bonés, Mochilas, Pochetes, e mais Acessórios GAP na Black Friday Dafiti! Escolha seus preferidos na Black Friday Dafiiti, a marca das melhores marcas!.
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Economize na Black Friday: Itens Gap com Descontos Imperdíveis',
+                bodyAccordion: `
+                    <h4>Descubra Seus Favoritos Gap na Black Friday Dafiti</h4>
+                    <p>
+                        A Black Friday na Dafiti é a sua oportunidade para aproveitar
+                        descontos incríveis em uma ampla variedade de produtos Gap.
+                        Prepare-se para desfrutar das melhores ofertas do ano e atualize o
+                        seu guarda-roupa com itens de alta qualidade da Gap.
+                    </p>
+                    <p>
+                        Aqui estão algumas razões para escolher a Dafiti durante a Black
+                        Friday Gap:
+                    </p>
+                    <ul>
+                        <li>
+                            Descontos exclusivos em
+                            <a href="https://www.dafiti.com.br/roupas/gap/">roupas</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios/gap/">acessórios</a>
+                            e <a href="https://www.dafiti.com.br/gap/">muito mais</a> da
+                            Gap.
+                        </li>
+                        <li>
+                            Uma ampla gama de estilos e modelos para
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/gap/">homens</a>,
+                            <a href="https://www.dafiti.com.br/roupas-femininas/gap/">mulheres</a>
+                            e
+                            <a href="https://www.dafiti.com.br/roupas-infantis/gap/">crianças</a>.
+                        </li>
+                        <li>
+                            Conveniência das compras online com entrega rápida e segura.
+                        </li>
+                        <li>
+                            Atendimento ao cliente excepcional para ajudar em todas as suas
+                            dúvidas e necessidades.
+                        </li>
+                        <li>Garantia de produtos autênticos da Gap.</li>
+                    </ul>
+                    <p>
+                        Não perca essa oportunidade única de economizar enquanto eleva o
+                        seu guarda-roupa com a qualidade e estilo incomparáveis da Gap.
+                        Junte-se à Black Friday da Dafiti e garanta os seus itens
+                        favoritos da Gap antes que os descontos acabem.
+                    </p>
+                `
+            },
+            {
+                title: 'Modelos de Moletons Gap na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Descubra os melhores modelos de moletons Gap com descontos
+                    incríveis durante a Black Friday na Dafiti. Explore nossa seleção
+                    exclusiva de:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/moletom/gap/">Moletom Gap Feminino na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O moletom Gap feminino oferece conforto e estilo para todas as
+                        estações. Use-o com jeans e uma camiseta para um visual casual
+                        ou combine-o com leggings para um look aconchegante nos dias
+                        mais frios.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/moletons/gap/">Moletom Gap Masculino na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Os moletons Gap masculinos são perfeitos para um estilo
+                        descontraído e elegante. Use-os com calças chino e um par de
+                        tênis para um visual casual chique ou com jeans para um look
+                        urbano.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-infantis/blusa-de-moletom/gap/">Moletom Gap Infantil na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Os moletons Gap infantis oferecem conforto e diversão para as
+                        crianças. Mantenha os pequenos quentinhos e estilosos com os
+                        modelos infantis da Gap durante a Black Friday.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas imperdíveis da Black Friday para adquirir
+                    esses moletons Gap de alta qualidade e elevar seu estilo e
+                    conforto a um novo patamar durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Calças e Shorts GAP na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Encontre as melhores calças e shorts GAP com descontos imperdíveis
+                    durante a Black Friday na Dafiti. Confira nossa seleção exclusiva
+                    de:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/gap/">Calças Masculinas GAP na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As calças masculinas GAP oferecem estilo e conforto para
+                        diversas ocasiões. Escolha entre jeans para um visual casual,
+                        cargo para praticidade ou moletom para máximo conforto durante a
+                        Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/calcas/gap/">Calças Femininas GAP na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As calças femininas GAP são ideais para um visual versátil e
+                        elegante. Opte por jeans para um look casual, cargo para um
+                        toque prático ou moletom para aconchego durante o evento da
+                        Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-infantis/calca/gap/">Calças Infantis GAP na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As calças infantis GAP oferecem conforto e estilo para as
+                        crianças. Escolha entre jeans, cargo ou moletom para manter os
+                        pequenos com visual descolado durante a Black Friday da GAP.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-femininas/shorts/gap/">Shorts Femininos GAP na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Os shorts femininos GAP são perfeitos para um visual fresco e
+                        descontraído. Use-os durante a Black Friday para um look leve e
+                        confortável.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/roupas-masculinas/bermudas/gap/">Bermudas GAP na Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As bermudas GAP são ideais para o dia a dia. Mantenha-se
+                        confortável e elegante durante a Black Friday. Combine com
+                        camisetas ou blusinhas para um visual casual.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas incríveis da Black Friday para renovar seu
+                    guarda-roupa com calças e shorts de alta qualidade da GAP. Seja
+                    para homens, mulheres ou crianças, você encontrará as peças ideais
+                    durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Dicas Exclusivas para Aproveitar GAP na Black Friday Dafiti',
+                bodyAccordion: `
+                    <h4>
+                    Guia de Dicas: Garanta os melhores produtos GAP na Black Friday
+                    Dafiti
+                    </h4>
+                    <table border="1">
+                    <thead>
+                        <tr>
+                        <th>Peça GAP</th>
+                        <th>Ocasião de Uso</th>
+                        <th>Dicas de Peças e Acessórios que Combinam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/moletom/gap/">Moletom Gap Feminino</a>
+                        </td>
+                        <td>Casual e Dias Frios</td>
+                        <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans/">jeans</a>
+                            e uma
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/">camiseta</a>
+                            para um visual casual ou leggings para um look aconchegante
+                            nos dias mais frios.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/moletons/gap/">Moletom Gap Masculino</a>
+                        </td>
+                        <td>Casual e Elegante</td>
+                        <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/">calças chino</a>
+                            e um par de
+                            <a href="https://www.dafiti.com.br/calcados-masculinos/tenis/">tênis</a>
+                            para um visual casual chique ou com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                            para um look urbano.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-infantis/blusa-de-moletom/gap/">Moletom Gap Infantil</a>
+                        </td>
+                        <td>Casual e Confortável</td>
+                        <td>
+                            Mantenha os pequenos quentinhos e estilosos com os
+                            <a href="https://www.dafiti.com.br/roupas-infantis/blusa-de-moletom/gap/">modelos infantis da Gap</a>
+                            durante a Black Friday.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/gap/">Camisetas Masculinas GAP</a>
+                        </td>
+                        <td>Casual</td>
+                        <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                            para um visual casual durante a Black Friday.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas-camisetas/gap/">Camisetas Femininas GAP</a>
+                        </td>
+                        <td>Casual e Elegante</td>
+                        <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/">calças</a>
+                            para um look casual chique durante o evento da Black Friday.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-infantis/blusas-e-camisetas/gap/">Camisetas Infantis GAP</a>
+                        </td>
+                        <td>Casual e Fofo</td>
+                        <td>
+                            Mantenha os pequenos com
+                            <a href="https://www.dafiti.com.br/roupas-infantis/blusas-e-camisetas/gap/">visual fofo e descolado</a>
+                            durante a Black Friday da GAP.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-infantis/blusas-e-camisetas/gap/">Blusinhas GAP</a>
+                        </td>
+                        <td>Descontraído</td>
+                        <td>
+                            Use com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">shorts</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/">calças</a>
+                            para um visual leve e confortável durante o evento da Black
+                            Friday.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/blusas-regata/gap/">Regatas GAP</a>
+                        </td>
+                        <td>Dias Quentes e Esportes</td>
+                        <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/">bermudas</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas-casuais-calca-legging/">leggings</a>
+                            para um visual esportivo.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/gap/">Calças Masculinas GAP</a>
+                        </td>
+                        <td>Versátil</td>
+                        <td>
+                            Escolha entre
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-jeans/">jeans</a>
+                            para um visual casual,
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/gap/">cargo</a>
+                            para praticidade ou
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/calcas-casuais/gap/">moletom</a>
+                            para máximo conforto durante a Black Friday.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/gap/">Calças Femininas GAP</a>
+                        </td>
+                        <td>Versátil e Elegante</td>
+                        <td>
+                            Opte por jeans para um look casual,
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/gap/">cargo</a>
+                            para um toque prático ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/gap/">moletom</a>
+                            para aconchego.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-infantis/calca/gap/">Calças Infantis GAP</a>
+                        </td>
+                        <td>Versátil e Descolado</td>
+                        <td>
+                            Escolha entre
+                            <a href="https://www.dafiti.com.br/roupas-infantis/calca/gap/">jeans</a>,
+                            <a href="https://www.dafiti.com.br/roupas-infantis/calca/gap/">cargo</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-infantis/calca/gap/">moletom</a>
+                            para manter os pequenos com visual descolado durante a Black
+                            Friday da GAP.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/gap/">Shorts Femininos GAP</a>
+                        </td>
+                        <td>Leve e Descontraído</td>
+                        <td>
+                            Use-os durante a Black Friday para um
+                            <a href="https://www.dafiti.com.br/roupas-femininas/shorts/gap/">look leve e confortável</a>.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/bermudas/gap/">Bermudas GAP</a>
+                        </td>
+                        <td>Uso Diário</td>
+                        <td>
+                            Mantenha-se confortável e elegante durante a Black Friday.
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-masculinas/camisetas/">camisetas</a>
+                            para um visual casual.
+                        </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <h4>Dicas para Aproveitar a Black Friday Dafiti da GAP</h4>
+                    <ol>
+                    <li>
+                        <h5>Defina Suas Necessidades</h5>
+                        <p>
+                        Saiba exatamente o que você procura: roupas, acessórios ou
+                        outros produtos da GAP.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Estabeleça um Orçamento</h5>
+                        <p>Tenha um limite de gastos para evitar compras impulsivas.</p>
+                    </li>
+                    <li>
+                        <h5>Faça uma Lista de Desejos</h5>
+                        <p>Anote os produtos da GAP que deseja adquirir.</p>
+                    </li>
+                    <li>
+                        <h5>Aproveite as Prévias de Ofertas</h5>
+                        <p>
+                        Fique atento às promoções que surgem antes da Black Friday.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Acompanhe as Promoções</h5>
+                        <p>
+                        Mantenha-se atualizado com as ofertas da Black Friday Dafiti.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Verifique a Política de Devolução</h5>
+                        <p>
+                        Reveja a política de devolução antes de finalizar sua compra.
+                        </p>
+                    </li>
+                    </ol>
+                    <p>
+                    Com essas dicas, você fará compras inteligentes na Black Friday da
+                    GAP na Dafiti.
+                    </p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+

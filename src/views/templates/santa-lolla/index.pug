@@ -1,0 +1,558 @@
+mixin santa-lolla()
+    .headerBlack
+        .glitch-img.bgAnimation
+            picture.line
+                img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_23_50_unnamed.webp", alt="")
+        .boxHeader
+            .glitch-img-infinite
+                picture.line.logotipo
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_30_16_30_30_Esquenta_pre-absurdo.png", alt="")
+            .glitch
+                h1.line Santa Lolla na Black Friday na Dafiti<br> <span>Os Melhores Preços do Ano!</span>
+            .boxText
+                p.text Descubra Calças, Vestidos, Camisetas, acessórios e muito mais na Black Friday da Dafiti, a marca das melhores marcas!
+                p A Black Friday de 2025 acontecerá no dia 28 de novembro:
+            +countdown('2025-11-28T00:00:00')
+            //- .   
+                {countdown-black-friday:latest}
+    
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Descubra os produtos em destaque de Santa Lolla nessa Black Friday Dafiti
+            a(href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/") 
+                h3 Slip On Santa Lolla na Black
+            p O queridinho do momento, Slip On Santa Lolla alia conforto, estilo e versatilidade para diferentes ocasiões. Aproveite a Black Dafiti para comprar com os melhores preços do ano.
+            a(href="https://www.dafiti.com.br/calcados/santa-lolla/") 
+                h3 Sapatos Santa Lolla na Black
+            p Descubra a variedade de modelos de sapatos Santa Lolla disponíveis na Black Friday Dafiti.
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/santa-lolla/") 
+                h3 Bolsas Santa Lolla na Black
+            p Bolsa Saco, Tiracolo, Baú, Transversal e muito mais. Descubra todos os modelos de Bolsa Santa Lolla disponíveis na Black Friday Dafiti.
+    
+    .boxForm
+        .linha
+        .glitch.glitch-02
+            h2.line OFERTAS <span>EXCLUSIVAS</span>
+        p.text Cadastre-se para receber ofertas e benefícios exclusivos das melhores marcas antes de todo mundo durante a Black Friday Dafiti.
+        +template-formulario-crm('black-friday2025')
+        .linha
+
+    .boxInfos
+        .bodyGroup
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_42_58_img1.png", alt="")
+                p A <b>black</b> mais fashion do mundo
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_01_img2.png", alt="")
+                p Os melhores descontos com até <b>80% off</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_02_img3.png", alt="")
+                p A melhor forma de pagamento em até <b>10x sem juros</b>
+            .card.glitch-img
+                picture.line
+                    img(src="https://dafitistatic.dafiti.com.br/cms/2025_10_31_09_43_04_img4.png", alt="")
+                p <b>Entrega em 24h</b> e se precisar trocar, retiramos na sua casa
+
+    .boxQrCode
+        .boxMax
+            .boxImg
+                img(src="https://dafitistatic.dafiti.com.br/cms/onsite/2023/black-friday/2023_10_25_16_02_39_qr-code.png", alt="")
+            .boxText
+                h2 Chegou a Black Friday Dafiti! Baixe o App e Arrase nas Compras!
+                p Se você não quer perder nenhuma oportunidade nessa Black Friday, baixe o aplicativo Dafiti agora mesmo. Com ele, você terá acesso antecipado às ofertas e notificações instantâneas sobre seus produtos favoritos. Baixe o aplicativo Dafiti e curta toda a conveniência que você merece!
+                a(href="https://www.dafiti.com.br/aplicativo-dafiti/")
+                    p Baixe o App
+    
+    .boxAccordion
+        .glitch
+            h2.line <span>dúvidas sobre a</span> BLACK FRIDAY DAFITI
+        +accordionComponent([
+            {
+                title: 'Aproveite a Black Friday com Itens Santa Lolla em Promoção',
+                bodyAccordion: `
+                    <p>
+                        Descubra os seus favoritos da Santa Lolla com descontos
+                        imperdíveis durante a Black Friday da Dafiti. Aproveite as
+                        melhores ofertas do ano e atualize o seu guarda-roupa com
+                        calçados, bolsas e acessórios de alta qualidade.
+                    </p>
+                    <p>
+                        Confira por que escolher a Dafiti na Black Friday Santa Lolla:
+                    </p>
+                    <ul>
+                        <li>
+                            Descontos exclusivos em
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">slip ons</a>,
+                            <a href="https://www.dafiti.com.br/calcados/santa-lolla/">sapatos</a>,
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios/santa-lolla/">bolsas</a>
+                            e
+                            <a href="https://www.dafiti.com.br/santa-lolla/">muito mais</a>
+                            da Santa Lolla.
+                        </li>
+                        <li>
+                            Ampla variedade de estilos e modelos para todas as ocasiões.
+                        </li>
+                        <li>
+                            Conveniência das compras online com entrega rápida e segura.
+                        </li>
+                        <li>
+                            Atendimento ao cliente excepcional para todas as suas
+                            necessidades.
+                        </li>
+                        <li>
+                            Produtos autênticos da Santa Lolla com garantia de qualidade.
+                        </li>
+                    </ul>
+                    <p>
+                        Não perca a oportunidade de economizar enquanto eleva o seu estilo
+                        com a distinta elegância da Santa Lolla. Junte-se à Black Friday
+                        da Dafiti e garanta os seus itens favoritos da Santa Lolla antes
+                        que os descontos se esgotem.
+                    </p>
+                `
+            },
+            {
+                title: 'Explore os Tênis Slip-On Santa Lolla na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Descubra os mais incríveis modelos de tênis Slip-On Santa Lolla
+                    com descontos imperdíveis durante a Black Friday na Dafiti. Nossa
+                    seleção exclusiva inclui:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Slip On Suede Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Slip On Suede Santa Lolla combina conforto e estilo para um
+                        visual incrível. Aproveite a Black Friday para adquirir este
+                        modelo com desconto especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Slip On Comfort Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Slip On Comfort Santa Lolla é perfeito para quem valoriza o
+                        conforto. Descubra descontos exclusivos durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Slip On Tressê Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Slip On Tressê Santa Lolla adiciona um toque de estilo ao seu
+                        visual. Garanta o seu com desconto durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Slip On Spikes Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Slip On Spikes Santa Lolla traz um toque de ousadia ao seu
+                        look. Aproveite a Black Friday para adquirir o seu com desconto
+                        especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Slip On Flat Form Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Slip On Flat Form Santa Lolla oferece estilo e altura.
+                        Encontre descontos irresistíveis durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Outros Modelos de Slip On Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Explore ainda mais opções, como Slip On Preto, Bege, Branco,
+                        Colorido e Estampado, todos com descontos excepcionais durante a
+                        Black Friday na Dafiti.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas especiais para adquirir esses tênis Slip On
+                    Santa Lolla de alta qualidade e elevar seu estilo a um novo
+                    patamar durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Descubra os Sapatos Santa Lolla na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Prepare-se para encontrar os mais incríveis modelos de sapatos
+                    Santa Lolla com descontos imperdíveis durante a Black Friday na
+                    Dafiti. Nossa seleção exclusiva inclui:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/sandalias/santa-lolla/">Sandália Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Sandália Santa Lolla oferece estilo e conforto para diversas
+                        ocasiões. Não perca a chance de adquirir este modelo com um
+                        desconto especial durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/rasteiras/santa-lolla/">Rasteirinha Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Rasteirinha Santa Lolla é perfeita para um visual leve e
+                        despojado. Descubra descontos exclusivos durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/sapatilhas/santa-lolla/">Sapatilha Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Sapatilha Santa Lolla é uma escolha elegante e versátil.
+                        Garanta a sua com um desconto especial durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/botas/santa-lolla/">Botas Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        As Botas Santa Lolla são ideais para enfrentar o frio com
+                        estilo. Aproveite a Black Friday para adquirir o seu par com um
+                        desconto especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/chinelos/santa-lolla/">Chinelo Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Chinelo Santa Lolla oferece conforto e estilo para os dias
+                        mais descontraídos. Encontre descontos irresistíveis durante a
+                        Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/scarpins/santa-lolla/">Scarpin Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Scarpin Santa Lolla adiciona elegância instantânea ao seu
+                        look. Aproveite a Black Friday para adquirir o seu com um
+                        desconto especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/calcados-femininos/tenis/santa-lolla/">Tênis Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        O Tênis Santa Lolla oferece conforto e estilo para um visual
+                        casual. Não perca a oportunidade de adquirir este modelo com um
+                        desconto especial durante a Black Friday.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas especiais para adquirir esses sapatos Santa
+                    Lolla de alta qualidade e elevar seu estilo a um novo patamar
+                    durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Descubra as Bolsas Santa Lolla na Black Friday',
+                bodyAccordion: `
+                    <p>
+                    Prepare-se para encontrar os mais incríveis modelos de bolsas
+                    Santa Lolla com descontos imperdíveis durante a Black Friday na
+                    Dafiti. Nossa seleção exclusiva inclui:
+                    </p>
+                    <ul>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-saco/santa-lolla/">Bolsa Saco Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Saco Santa Lolla oferece estilo e praticidade para
+                        diversas ocasiões. Não perca a chance de adquirir este modelo
+                        com um desconto especial durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-bau/santa-lolla/">Bolsa Tiracolo Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Tiracolo Santa Lolla é perfeita para um visual leve e
+                        descontraído. Descubra descontos exclusivos durante a Black
+                        Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-bau/santa-lolla/">Bolsa Baú Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Baú Santa Lolla é uma escolha elegante e versátil.
+                        Garanta a sua com um desconto especial durante a Black Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-carteira-clutch/santa-lolla/">Bolsa Carteira/Clutch Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Carteira/Clutch Santa Lolla é ideal para ocasiões
+                        especiais. Aproveite a Black Friday para adquirir a sua com um
+                        desconto especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-sacola/santa-lolla/">Bolsa Sacola Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Sacola Santa Lolla oferece espaço e estilo para o seu
+                        dia a dia. Encontre descontos irresistíveis durante a Black
+                        Friday.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-transversal/santa-lolla/">Bolsa Transversal Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        A Bolsa Transversal Santa Lolla é prática e moderna. Aproveite a
+                        Black Friday para adquirir a sua com um desconto especial.
+                    </p>
+                    <li>
+                        <h4>
+                        <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/santa-lolla/">Outras Bolsas Santa Lolla Black Friday</a>
+                        </h4>
+                    </li>
+                    <p>
+                        Explore ainda mais opções, como Bolsas de outros estilos, todas
+                        com descontos excepcionais durante a Black Friday na Dafiti.
+                    </p>
+                    </ul>
+                    <p>
+                    Aproveite as ofertas especiais para adquirir essas bolsas Santa
+                    Lolla de alta qualidade e elevar seu estilo a um novo patamar
+                    durante o evento!
+                    </p>
+                `
+            },
+            {
+                title: 'Santa Lolla na Black Friday Dafiti',
+                bodyAccordion: `
+                    <h4>
+                    Guia de Dicas: Aproveite ao Máximo a Black Friday da Santa Lolla
+                    na Dafiti
+                    </h4>
+                    <table border="1">
+                    <thead>
+                        <tr>
+                        <th>Produto Santa Lolla</th>
+                        <th>Ocasião de Uso</th>
+                        <th>Dicas de Estilo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/tenis-slip-on/santa-lolla/">Tênis Slip On Santa Lolla</a>
+                        </td>
+                        <td>Conforto e Estilo</td>
+                        <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas-jeans/">jeans</a>
+                            para um visual casual e confortável.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/santa-lolla/">Sapatos Santa Lolla</a>
+                        </td>
+                        <td>Elegância e Versatilidade</td>
+                        <td>
+                            Use um
+                            <a href="https://www.dafiti.com.br/calcados-femininos/scarpins/santa-lolla/">scarpin Santa Lolla</a>
+                            com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/calcas/">calças sociais</a>
+                            para um toque sofisticado.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/santa-lolla/">Bolsas Santa Lolla</a>
+                        </td>
+                        <td>Praticidade e Estilo</td>
+                        <td>
+                            Complemente seu look com uma
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsa-saco/santa-lolla/">bolsa saco Santa Lolla</a>
+                            para ocasiões diversas.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/rasteiras/santa-lolla/">Rasteirinhas Santa Lolla</a>
+                        </td>
+                        <td>Leveza e Descontração</td>
+                        <td>
+                            Combine com
+                            <a href="https://www.dafiti.com.br/roupas-femininas/vestidos/">vestidos</a>
+                            ou
+                            <a href="https://www.dafiti.com.br/roupas-femininas/saias/">saias</a>
+                            para um visual descontraído.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/santa-lolla/">Botas Santa Lolla</a>
+                        </td>
+                        <td>Elegância para o Frio</td>
+                        <td>
+                            Escolha
+                            <a href="https://www.dafiti.com.br/calcados-femininos/botas/santa-lolla/">botas Santa Lolla</a>
+                            para enfrentar o frio com estilo.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/calcados-femininos/chinelos/santa-lolla/">Chinelos Santa Lolla</a>
+                        </td>
+                        <td>Conforto para os Dias Relax</td>
+                        <td>
+                            Use um
+                            <a href="https://www.dafiti.com.br/calcados-femininos/chinelos/santa-lolla/">chinelo Santa Lolla</a>
+                            para relaxar com conforto.
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <a href="https://www.dafiti.com.br/santa-lolla/">Outros Modelos Santa Lolla</a>
+                        </td>
+                        <td>Variedade de Opções</td>
+                        <td>
+                            Descubra outros modelos de
+                            <a href="https://www.dafiti.com.br/calcados-femininos/santa-lolla/">calçados</a>
+                            e
+                            <a href="https://www.dafiti.com.br/bolsas-e-acessorios/santa-lolla/">acessórios Santa Lolla</a>
+                            com descontos excepcionais na Dafiti.
+                        </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <p>
+                    Aproveite as ofertas especiais para adquirir produtos Santa Lolla
+                    de alta qualidade e elevar seu estilo a um novo patamar durante o
+                    evento!
+                    </p>
+                `
+            },
+        ])
+
+    //- . 
+        {mais-buscados-black:latest}
+    
+    .boxSearched
+        .glitch
+            h2.line <span>Mais buscados da</span> BLACK
+        .searched
+            a(href="https://www.dafiti.com.br/nike/")
+                h2 Nike Black Friday
+            a(href="https://www.dafiti.com.br/adidas/")
+                h2 Adidas Black Friday
+            a(href="https://www.dafiti.com.br/mango/")
+                h2 Mango Black Friday
+            a(href="https://www.dafiti.com.br/santa-lolla/")
+                h2 Santa Lolla Black Friday
+            a(href="https://www.dafiti.com.br/gap/")
+                h2 GAP Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/vestidos/")
+                h2 Vestido Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/sandalias/")
+                h2 Sandália Feminina Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/")
+                h2 Bolsa Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/")
+                h2 Camiseta Black Friday
+            a(href="https://www.dafiti.com.br/roupas-masculinas/bermudas/")
+                h2 Bermuda Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/rasteiras/")
+                h2 Rasteira Black Friday
+            a(href="https://www.dafiti.com.br/vizzano/")
+                h2 Vizzano Black Friday
+            a(href="https://www.dafiti.com.br/farm/")
+                h2 FARM Black Friday
+            a(href="https://www.dafiti.com.br/tricae/")
+                h2 Tricae Black Friday
+            a(href="https://www.dafiti.com.br/ogochi/")
+                h2 Ogochi Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/mocassim/")
+                h2 Mocassim Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/scarpins/")
+                h2 Scarpin Black Friday
+            a(href="https://www.dafiti.com.br/roupas/?q=calca%20jeans")
+                h2 Calça Jeans Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/?q=carteira")
+                h2 Carteira Black Friday
+            a(href="https://www.dafiti.com.br/papete/")
+                h2 Papete Black Friday
+            a(href="https://www.dafiti.com.br/tommy-hilfiger/")
+                h2 Tommy Hilfiger Black Friday
+            a(href="https://www.dafiti.com.br/lacoste/")
+                h2 Lacoste Black Friday
+            a(href="https://www.dafiti.com.br/moleca/")
+                h2 Moleca Black Friday
+            a(href="https://www.dafiti.com.br/vans/")
+                h2 Vans Black Friday
+            a(href="https://www.dafiti.com.br/calvin-klein/")
+                h2 Calvin Klein Black Friday
+            a(href="https://www.dafiti.com.br/reserva/")
+                h2 Reserva Black Friday
+            a(href="https://www.dafiti.com.br/tenis/casual/")
+                h2 Tênis Casual Black Friday
+            a(href="https://www.dafiti.com.br/esporte-feminino/roupas/")
+                h2 Roupa Fitness Black Friday
+            a(href="https://www.dafiti.com.br/sneakers-dafiti/")
+                h2 Sneaker Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/chinelos/")
+                h2 Chinelo Black Friday
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios/relogio/")
+                h2 Relógio Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/saias/")
+                h2 Saia Black Friday
+            a(href="https://www.dafiti.com.br/calcados-masculinos/sapato-social/")
+                h2 Sapato Social Black Friday
+            a(href="https://www.dafiti.com.br/calcados-femininos/botas/")
+                h2 Bota Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/calcas/")
+                h2 Calça Black Friday
+            a(href="https://www.dafiti.com.br/new-balance/")
+                h2 New Balance Black Friday
+            a(href="https://www.dafiti.com.br/asics/")
+                h2 Asics Black Friday
+            a(href="https://www.dafiti.com.br/havaianas/")
+                h2 Havaianas Black Friday
+            a(href="https://www.dafiti.com.br/esporte-masculino/acessorios-bones-e-gorros/")
+                h2 Boné Black Friday
+            a(href="https://www.dafiti.com.br/roupas-femininas/moda-praia-biquini/")
+                h2 Biquíni Black Friday
+
