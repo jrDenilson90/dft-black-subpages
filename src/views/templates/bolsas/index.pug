@@ -13,9 +13,34 @@ mixin bolsas()
                 p.text Na Black Friday da Dafiti, mergulhe no mundo das bolsas com descontos incríveis!
                 p.text Descubra uma variedade de estilos, de bolsas grandes a pequenas, couro a tecido, todas a preços imperdíveis.
                 p A Black Friday de 2025 acontecerá no dia 28 de novembro:
-            +countdown('2025-11-28T00:00:00')
-            //- .   
+            //- +countdown('2025-11-28T00:00:00')
+            .   
                 {countdown-black-friday:latest}
+    
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Bolsas <b>Black Friday Dafiti</b> para Ideais Para Você
+            .flexCardsImgs
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_06_10_59_04_frame_glitch.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line BOLSA <strong>PEQUENA</strong>
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_06_10_59_06_frame_glitch2.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line BOLSA <strong>GRANDE</strong>
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/") 
+                h3 Bolsas Grandes
+            p As bolsas grandes oferecem praticidade e espaço, perfeitas para o dia a dia.
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/") 
+                h3 Bolsas Médias
+            p As bolsas médias são ideais para quem busca equilíbrio entre estilo e funcionalidade.
+            a(href="https://www.dafiti.com.br/bolsas-e-acessorios-femininos/bolsas/") 
+                h3 Bolsas Pequenas
+            p As bolsas pequenas são perfeitas para eventos elegantes, garantindo um toque de sofisticação.
     
     .boxForm
         .linha
@@ -433,10 +458,10 @@ mixin bolsas()
             },
         ])
 
-    //- . 
+    . 
         {mais-buscados-black:latest}
     
-    .boxSearched
+    //- .boxSearched
         .glitch
             h2.line <span>Mais buscados da</span> BLACK
         .searched

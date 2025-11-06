@@ -13,9 +13,36 @@ mixin tenis()
                 p.text Se você está buscando as melhores ofertas em tênis durante a Black Friday, a Dafiti é o seu destino ideal.
                 p.text Com uma ampla variedade de marcas e estilos, nossa seleção de tênis oferece modelos para todos os gostos.
                 p A Black Friday de 2025 acontecerá no dia 28 de novembro:
-            +countdown('2025-11-28T00:00:00')
-            //- .   
+            //- +countdown('2025-11-28T00:00:00')
+            .   
                 {countdown-black-friday:latest}
+    
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Categorias de Tênis <b>Black Friday Dafiti</b>
+            .flexCardsImgs
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_05_16_53_31_frame_glitch.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line <strong>TÊNIS</strong> CANO BAIXO
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_05_16_53_33_frame_glitch2.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line <strong>TÊNIS</strong> CANO MÉDIO
+            h3 Tênis Femininos e Masculinos
+            p Além disso, nossa seleção de Tênis Black Friday Dafiti inclui uma ampla variedade de opções tanto para tênis femininos quanto para tênis masculinos. Encontre estilos que se adequam ao seu gosto e personalidade, tudo com descontos incríveis durante a Black Friday.
+            a(href="https://www.dafiti.com.br/tenis/casual/") 
+                h3 Tênis Casual
+            p Para quem procura estilo no dia a dia, os tênis casuais oferecem conforto e moda em um só pacote. Desde modelos Slip On até estampados, há opções para todos os gostos.
+            a(href="https://www.dafiti.com.br/calcados-femininos/tenis/") 
+                h3 Tênis Esportivos
+            p Os tênis esportivos na Black Friday Dafiti são ideais para quem pratica atividades físicas. Escolha entre marcas como Nike e Adidas para obter o máximo desempenho e estilo.
+            a(href="https://www.dafiti.com.br/tenis/casual/") 
+                h3 Tênis Cano Alto, Médio e Baixo
+            p Seja para um look despojado ou mais formal, temos opções de cano alto, médio e baixo que se encaixam perfeitamente em diversas ocasiões.
     
     .boxForm
         .linha
@@ -369,10 +396,10 @@ mixin tenis()
             },
         ])
 
-    //- . 
+    . 
         {mais-buscados-black:latest}
     
-    .boxSearched
+    //- .boxSearched
         .glitch
             h2.line <span>Mais buscados da</span> BLACK
         .searched

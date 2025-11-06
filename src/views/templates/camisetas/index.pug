@@ -13,9 +13,39 @@ mixin camisetas()
                 p.text Se você está em busca das melhores ofertas em camisetas durante a Black Friday, a Dafiti é o seu destino ideal.
                 p.text Com uma vasta seleção de marcas e estilos, nossa coleção de camisetas oferece opções femininas e masculinas para todos os gostos.
                 p A Black Friday de 2025 acontecerá no dia 28 de novembro:
-            +countdown('2025-11-28T00:00:00')
-            //- .   
+            //- +countdown('2025-11-28T00:00:00')
+            .   
                 {countdown-black-friday:latest}
+    
+    .boxNewInfos
+        .maxBox
+            .glitch.glitch-02
+                h2.line Categorias de Camiseta <b>Black Friday Dafiti</b>
+            .flexCardsImgs
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_05_17_01_57_frame_glitch.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line CAMISETA <strong>MASCULINA</strong>
+                .card
+                    .glitch-img
+                        img.line(src="https://dafitistatic.dafiti.com.br/cms/2025_11_05_17_01_59_frame_glitch2.jpg", alt="")
+                    .glitch.glitch-02
+                        h2.line CAMISETA <strong>FEMININA</strong>
+            h3 Camisetas Femininas e Masculinas
+            p Além disso, nossa linha de Camiseta Black Friday Dafiti inclui uma ampla variedade de opções tanto para camisetas femininas quanto para camisetas masculinas. Encontre estilos que se adequam ao seu gosto e personalidade, tudo com descontos incríveis durante a Black Friday.
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/") 
+                h3 Camiseta Reta e Slim
+            p Para um visual clássico e elegante, as camisetas retas são ideais. Se você prefere um corte mais ajustado, as camisetas slim oferecem um estilo moderno e sofisticado.
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/") 
+                h3 Camisetas Manga Curta e Manga Longa
+            p Para se adaptar a diferentes estações, nossas opções de camisetas manga curta são perfeitas para o verão, enquanto as camisetas manga longa oferecem conforto e estilo nos dias mais frios.
+            a(href="https://www.dafiti.com.br/roupas-masculinas/camisetas/") 
+                h3 Camisetas Gola Redonda e Gola V
+            p Escolha entre camisetas com gola redonda para um visual clássico ou camisetas com gola V para um toque mais moderno. Ambas oferecem estilo e conforto.
+            a(href="https://www.dafiti.com.br/esporte-masculino/roupas-camisetas/") 
+                h3 Camiseta Casual e Esportiva
+            p Seja para um passeio casual ou para atividades esportivas, nossas camisetas casuais e camisetas esportivas garantem conforto e estilo em qualquer ocasião.
     
     .boxForm
         .linha
@@ -426,10 +456,10 @@ mixin camisetas()
             },
         ])
 
-    //- . 
+    . 
         {mais-buscados-black:latest}
     
-    .boxSearched
+    //- .boxSearched
         .glitch
             h2.line <span>Mais buscados da</span> BLACK
         .searched
